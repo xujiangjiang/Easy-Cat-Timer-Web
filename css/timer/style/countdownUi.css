@@ -1,0 +1,380 @@
+/* 计时器 的 [倒计时界面] */
+
+/*计时界面 的盒子*/
+#countdownUi{
+
+    /* 隐藏 */
+    visibility: hidden;
+
+    /*超出边框的内容 自动隐藏*/
+    overflow: hidden;
+
+}
+
+
+
+/* 时间的文字 */
+/* 文字：时间 */
+#countdownUi .time .timeText{
+    /*大小*/
+    width: 394px;
+    height: 270px;
+
+    /*位置*/
+    left: 0px;
+    top: 10px;
+
+    /*字体*/
+    font-family: "MaybeCuteFont";
+    font-size: 270px;
+    text-align: center;
+    color: #656565;
+
+    /*不能选中文字*/
+    user-select: none;
+}
+
+
+
+/* 时间到了 */
+#countdownUi .timeIsUp{
+    /* 大小 */
+    width: 394px;
+    height: 344px;
+
+    /* 颜色 */
+    background-color: white;
+
+    /* 隐藏 */
+    opacity: 0;
+}
+/* 文字：时间到了 */
+#countdownUi .timeIsUp .image{
+    /* 大小 */
+    width: 369px;
+    height: 107px;
+
+    /*位置*/
+    left: 12px;
+    top: 109px;
+
+    /*图片*/
+    background-image: url(../../../asset/image/text/english/TimeIsUp.png);
+}
+
+
+
+/* 暂停 */
+#countdownUi .paused{
+
+    /* 隐藏 */
+    visibility: hidden;
+
+}
+/* 图片：暂停 */
+#countdownUi .paused .pausedImage{
+    /*大小*/
+    width: 311px;
+    height: 101px;
+
+    /*位置*/
+    left: 39px;
+    top: 37px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/text/english/Paused.png);
+}
+/* 文字：时间 */
+#countdownUi .paused .timeText{
+    /*大小*/
+    width: 394px;
+    height: 270px;
+
+    /*位置*/
+    left: 97px;
+    top: 141px;
+
+    /*字体*/
+    font-family: "MaybeCuteFont";
+    font-size: 82px;
+    text-align: center;
+    color: #656565;
+
+    /*不能选中文字*/
+    user-select: none;
+}
+/* 背景：灰色 */
+#countdownUi .paused .background{
+    /*大小*/
+    width: 394px;
+    height: 344px;
+
+    /*位置*/
+    left: 0px;
+    top: 0px;
+    
+    /*颜色*/
+    background-color: #898989;
+}
+
+
+
+/* 黑色的猫 */
+/* 猫 */
+#countdownUi .blackCat .cat{
+    /*大小*/
+    width: 233px;
+    height: 215px;
+
+    /*定位*/
+    top: 250px;
+    left: 182px;
+}
+/* 猫的身体 */
+#countdownUi .blackCat .cat .body{
+    /*大小*/
+    width: 233px;
+    height: 215px;
+
+    /*定位*/
+    top: 0px;
+    left: 0px;
+
+    /*图片*/
+    background-image: url(../../../asset/image/cat/BlackCat-Body.png);
+}
+/* 猫的嘴巴 */
+#countdownUi .blackCat .cat .mouth{
+    /*大小*/
+    width: 96px;
+    height: 81px;
+
+    /*定位*/
+    top: 82px;
+    left: 68px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/cat/BlackCat-OpenMouth.png);
+}
+/* 猫的闭嘴 */
+#countdownUi .blackCat .cat .close{
+    /*大小*/
+    width: 96px;
+    height: 81px;
+
+    /*定位*/
+    top: 82px;
+    left: 68px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/cat/BlackCat-CloseMouth.png);
+
+    /*设置图片的层级（图片的前后关系）*/
+    z-index: 1;
+
+    /* 透明度 */
+    opacity: 0;
+
+    /* 点击穿透 */
+    pointer-events:none;
+}
+
+/* 黑色的猫（绳子） */
+/* 绳子 */
+#countdownUi .blackCat .rope{
+    /*大小*/
+    width: 72px;
+    height: 326px;
+
+    /*定位*/
+    top: -341px;
+    left: 267px;
+
+    /* 点击穿透 */
+    pointer-events:none;
+}
+/* 线 */
+#countdownUi .blackCat .rope .line{
+    /*大小*/
+    width: 8px;
+    height: 257px;
+
+    /*定位*/
+    top: 34px;
+    left: 30px;
+
+    /*图片*/
+    background-image: url(../../../asset/image/cat/BlackCat-Rope.png);
+}
+/* 文字 */
+#countdownUi .blackCat .rope .text{
+    /*大小*/
+    width: 71px;
+    height: 55px;
+
+    /*定位*/
+    top: 271px;
+    left: 0px;
+}
+/* 文字：恢复 */
+#countdownUi .blackCat .rope .text .reset{
+    /*大小*/
+    width: 71px;
+    height: 55px;
+
+    /*定位*/
+    top: 0px;
+    left: 0px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/text/english/Reset.png);
+}
+
+
+
+/* 黄色的猫 */
+/* 猫 */
+#countdownUi .yellowCat .cat{
+    /*大小*/
+    width: 256px;
+    height: 224px;
+
+    /*定位*/
+    top: 126px;
+    left: -35px;
+}
+/* 猫的身体 */
+#countdownUi .yellowCat .cat .body{
+    /*大小*/
+    width: 256px;
+    height: 224px;
+
+    /*定位*/
+    top: 0px;
+    left: 0px;
+
+    /*图片*/
+    background-image: url(../../../asset/image/cat/YellowCat-Body.png);
+}
+/* 猫的嘴巴 */
+#countdownUi .yellowCat .cat .mouth{
+    /*大小*/
+    width: 111px;
+    height: 99px;
+
+    /*定位*/
+    top: 93px;
+    left: 83px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/cat/YellowCat-OpenMouth.png);
+}
+/* 猫的闭嘴 */
+#countdownUi .yellowCat .cat .close{
+    /*大小*/
+    width: 111px;
+    height: 99px;
+
+    /*定位*/
+    top: 93px;
+    left: 83px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/cat/YellowCat-CloseMouth.png);
+
+    /*设置图片的层级（图片的前后关系）*/
+    z-index: 1;
+
+    /* 透明度 */
+    opacity: 0;
+
+    /* 点击穿透 */
+    pointer-events:none;
+}
+/* 猫的手 */
+#countdownUi .yellowCat .cat .hand{
+    /*大小*/
+    width: 158px;
+    height: 44px;
+
+    /*定位*/
+    top: 130px;
+    left: 63px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/cat/YellowCat-Hand.png);
+
+    /*设置图片的层级（图片的前后关系）*/
+    z-index: 2;
+
+    /* 点击穿透 */
+    pointer-events:none;
+}
+
+/* 黄色的猫（绳子） */
+/* 绳子 */
+#countdownUi .yellowCat .rope{
+    /*大小*/
+    width: 72px;
+    height: 326px;
+
+    /*定位*/
+    top: -369px;
+    left: 70px;
+
+    /* 点击穿透 */
+    pointer-events:none;
+}
+/* 线 */
+#countdownUi .yellowCat .rope .line{
+    /*大小*/
+    width: 15px;
+    height: 278px;
+
+    /*定位*/
+    top: 19px;
+    left: 35px;
+
+    /*图片*/
+    background-image: url(../../../asset/image/cat/YellowCat-Rope.png);
+}
+/* 文字 */
+#countdownUi .yellowCat .rope .text{
+    /*大小*/
+    width: 68px;
+    height: 48px;
+
+    /*定位*/
+    top: 277px;
+    left: 0px;
+}
+/* 文字：暂停 */
+#countdownUi .yellowCat .rope .text .pause{
+    /*大小*/
+    width: 68px;
+    height: 48px;
+
+    /*定位*/
+    top: 0px;
+    left: 0px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/text/english/Pause.png);
+}
+/* 文字：恢复 */
+#countdownUi .yellowCat .rope .text .resume{
+    /*大小*/
+    width: 68px;
+    height: 48px;
+
+    /*定位*/
+    top: 0px;
+    left: 2px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/text/english/Resume.png);
+
+    /* 透明度 */
+    opacity: 0;
+}
+

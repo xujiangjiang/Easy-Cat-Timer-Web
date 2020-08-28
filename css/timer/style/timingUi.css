@@ -1,0 +1,305 @@
+/* 计时器 的 [定时界面] */
+
+/*定时界面 的盒子*/
+#timingUi{
+     /* 隐藏 */
+     visibility: visible;
+}
+
+
+
+
+
+/*背景*/
+/*背景：灰色*/
+#timingUi .background .gray{
+    /* 大小 */
+    width: 139px;
+    height: 177px;
+    border-radius: 10px;
+
+    /* 定位 */
+    left: 193px;
+    top: 82px;
+
+    /* 颜色 */
+    background-color: #e2e2e2;
+}
+/*背景：黄色*/
+#timingUi .background .yellow{
+    /* 大小 */
+    width: 139px;
+    height: 177px;
+    border-radius: 10px;
+
+    /* 定位 */
+    left: 60px;
+    top: 64px;
+
+    /* 颜色 */
+    background-color: #ffcd2f;
+}
+
+
+/*时间的文字*/
+/*时间*/
+#timingUi .clock *{
+    /*大小*/
+    height: 240px;
+
+    /*字体*/
+    font-family: "MaybeCuteFont";
+    font-size: 240px;
+    text-align: center;
+    color: #656565;
+
+    /*不能选中文字*/
+    user-select: none;
+}
+/*文字：分钟*/
+#timingUi .clock .minuteText{
+    /*大小*/
+    width: 170px;
+    
+    /*位置*/
+    left: 25px;
+    top: 42px;
+}
+/*文字：秒钟*/
+#timingUi .clock .secondsText{
+    /*大小*/
+    width: 170px;
+    
+    /*位置*/
+    left: 199px;
+    top: 42px;
+}
+/*文字：冒号*/
+#timingUi .clock .colonText{
+    /*大小*/
+    width: 30px;
+    
+    /*位置*/
+    left: 182px;
+    top: 40px;
+}
+
+
+
+
+
+/*调整时间的按钮*/
+/*按钮：增加*/
+#timingUi .addButton{
+    /*大小*/
+    width: 20px;
+    height: 20px;
+    padding: 12px;
+
+    /*定位*/
+    top: 35px;
+    left: 101px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/other/UpDownButton-Up.png);
+    background-size: 20px 20px;
+    background-position: center center;
+
+    /*鼠标光标*/
+    cursor: pointer;
+}
+/*按钮：减少*/
+#timingUi .lessButton{
+    /*大小*/
+    width: 20px;
+    height: 20px;
+    padding: 12px;
+
+    /*定位*/
+    top: 260px;
+    left: 101px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/other/UpDownButton-Down.png);
+    background-size: 20px 20px;
+    background-position: center center;
+
+    /*鼠标光标*/
+    cursor: pointer;
+}
+/*按钮：分钟*/
+#timingUi .numberButton{
+    /*大小*/
+    width: 146px;
+    height: 174px;
+    border-radius: 20px;
+
+    /*定位*/
+    left: 40px;
+    top: 75px;
+}
+
+/*按钮的位置*/
+/*分钟按钮的位置*/
+#timingUi .minuteButtons{
+    /*定位*/
+    left: 0px;
+}
+/*秒钟按钮的位置*/
+#timingUi .secondsButtons{
+    /*定位*/
+    left: 168px;
+}
+
+
+
+/* 时间的输入框 */
+/* 背景：分钟 */
+#timingUi .changeClockInput .minute{
+    /*大小*/
+    width: 152px;
+    height: 201px;
+    border-radius: 10px;
+    
+    /*定位*/
+    left: 32px;
+    top: 59px;
+
+    /* 颜色 */
+    background-color: #ffcd2f;
+
+    /*阴影*/
+    box-shadow: 0px 0px 10px 0px rgba(91, 91, 91, 0.25) ;
+
+    /* 隐藏 */
+    visibility: hidden;
+}
+/* 输入框：分钟 */
+#timingUi .changeClockInput .minute .input{
+    /*大小*/
+    width: 152px;
+    height: 240px;
+    
+    /*定位*/
+    left: 0px;
+    top: 0px;
+
+    /* 颜色 */
+    background-color: transparent;
+
+    /* 边框 */
+    outline: none;
+    border-width: 0px;
+
+    /* 文字 */
+    font-family: "MaybeCuteFont";
+    font-size: 195px;
+    text-align: center;
+    color: #656565;
+
+    /* 剪裁 */
+    clip:rect(0px,152px,190px,0px);
+}
+/* 背景：秒钟 */
+#timingUi .changeClockInput .seconds{
+    /*大小*/
+    width: 152px;
+    height: 201px;
+    border-radius: 10px;
+    
+    /*定位*/
+    left: 206px;
+    top: 59px;
+
+    /* 颜色 */
+    background-color: #e2e2e2;
+
+    /*阴影*/
+    box-shadow: 0px 0px 10px 0px rgba(91, 91, 91, 0.25) ;
+
+    /* 隐藏 */
+    visibility: hidden;
+}
+/* 输入框：秒钟 */
+#timingUi .changeClockInput .seconds .input{
+    /*大小*/
+    width: 152px;
+    height: 240px;
+    
+    /*定位*/
+    left: 0px;
+    top: 0px;
+
+    /* 颜色 */
+    background-color: transparent;
+
+    /* 边框 */
+    outline: none;
+    border-width: 0px;
+
+    /* 文字 */
+    font-family: "MaybeCuteFont";
+    font-size: 195px;
+    text-align: center;
+    color: #656565;
+
+    /* 剪裁 */
+    clip:rect(0px,152px,190px,0px);
+}
+/* 按钮：关闭按钮 */
+#timingUi .changeClockInput .closeButton{
+    /*大小*/
+    width: 394px;
+    height: 344px;
+
+    /* 隐藏 */
+    visibility: hidden;
+}
+
+
+
+/*下方的按钮*/
+#timingUi .start{
+    /*大小*/
+    width: 85px;
+    height: 39px;
+
+    /*定位*/
+    top: 284px;
+    left: 260px;
+}
+/*按钮：开始*/
+#timingUi .start .button{
+    /*大小*/
+    width: 85px;
+    height: 39px;
+
+    /*定位*/
+    top: 0px;
+    left: 0px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/text/english/Start.png);
+
+    /*鼠标光标*/
+    cursor: pointer;
+}
+/* 图片：下划线 */
+#timingUi .start .line{
+    /*大小*/
+    width: 85px;
+    height: 39px;
+
+    /*定位*/
+    top: 0px;
+    left: 0px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/text/english/StartLine.png);
+    
+    /* 透明度 */
+    opacity: 0;
+
+    /* 点击穿透 */
+    pointer-events:none;
+}

@@ -1,0 +1,408 @@
+/* 计时器 的 [设置界面] */
+
+/*定时界面 的盒子*/
+#settingUi{
+    /* 隐藏/显示 */
+    visibility: hidden;    
+}
+
+
+
+/* 背景图 */
+/* 左边的背景 */
+#settingUi .leftBackground{
+    /*大小*/
+    width: 220px;
+    height: 276px;
+
+    /*定位*/
+    top: 1px;
+    left: 12px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/other/WavePoint.png);
+}
+/* 右边的背景 */
+#settingUi .rightBackground{
+    /*大小*/
+    width: 220px;
+    height: 276px;
+
+    /*定位*/
+    top: 43px;
+    left: 154px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/other/WavePoint.png);
+
+    /* 点击穿透 */
+    pointer-events:none;
+}
+
+
+
+/* 气泡框 */
+/* 气泡框的背景 */
+#settingUi .bubbleBox{
+    /* 大小 */
+    width: 228px;
+    height: 286px;
+    border-radius: 12px;
+
+    /* 定位 */
+    left: 150px;
+    top: 37px;
+
+    /* 颜色和阴影 */
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(122, 122, 122, 0.2) ;
+}
+/* 气泡框的圆角 */
+#settingUi .roundedCorner{
+    /* 大小 */
+    width: 16px;
+    height: 11px;
+
+    /* 定位 */
+    left: 291px;
+    top: 30px;
+
+    /*设置图片的层级（图片的前后关系）*/
+    z-index: 1;
+
+    /*图片*/
+    background-image: url(../../../asset/image/other/WhiteArrow.png);
+
+    /* 点击穿透 */
+    pointer-events:none;
+}
+
+
+
+/* 关闭按钮 */
+#settingUi .closeButton{
+    /* 大小 */
+    width: 394px;
+    height: 344px;
+
+    /* 背景颜色 */
+    background-color: transparent;
+}
+
+
+
+/* Logo */
+/* 分割线 */
+#settingUi .divideLine{
+    /* 大小 */
+    width: 193px;
+    height: 72px;
+
+    /* 定位 */
+    left: 170px;
+    top: 92px;
+
+    /*图片*/
+    background-image: url(../../../asset/image/other/DivideLine.png);
+}
+/* Logo的图片 */
+#settingUi .logo{
+    /* 大小 */
+    width: 115px;
+    height: 114px;
+
+    /* 定位 */
+    left: 163px;
+    top: 54px;
+
+    /*图片*/
+    background-image: url(../../../asset/image/logo/Logo-Samll.png);
+}
+/* 版本号 */
+#settingUi .version{
+    /* 大小 */
+    width: 46px;
+    height: 18px;
+
+    /* 定位 */
+    left: 282px;
+    top: 79px;
+
+    /*图片*/
+    background-image: url(../../../asset/image/other/Version.png);
+}
+
+
+
+/* 按钮 */
+/* 按钮：github */
+#settingUi .githubButton{
+    /*大小*/
+    width: 43px;
+    height: 43px;
+
+    /*定位*/
+    top: 108px;
+    left: 276px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/other/Github.png);
+
+    /*鼠标光标*/
+    cursor: pointer;
+}
+/* 按钮：staff */
+#settingUi .staffButton{
+    /*大小*/
+    width: 42px;
+    height: 43px;
+
+    /*定位*/
+    top: 108px;
+    left: 322px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/other/AppInfo.png);
+
+    /*鼠标光标*/
+    cursor: pointer;
+}
+
+
+
+/* staff面板 */
+/* 面板：staff */
+#settingUi .staffPanel{
+    /*大小*/
+    width: 168px;
+    height: 234px;
+
+    /*定位*/
+    top: 6px;
+    left: 391px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/other/Staff.png);
+
+    /* 点击穿透 */
+    pointer-events:none;
+}
+
+
+
+/* 选项 */
+/* 选项名 */
+#settingUi .settingTitle{
+    /*大小*/
+    width: 74px;/*76*/
+    height: 62px;/*64*/
+
+    /*定位*/
+    top: 211px;
+    left: 178px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/text/english/SettingTitle.png);
+}
+
+
+
+/* 音量的滑动条 */
+/* 滑动条 */
+#settingUi .volumeSlider{
+    /* 大小 */
+    width: 114px;
+    height: 26px;
+
+    /*定位*/
+    top: 214px;
+    left: 247px;
+}
+/* 滑动条的背景 */
+#settingUi .volumeSlider .background{
+    /* 大小 */
+    width: 95px;
+    height: 5px;
+
+    /*定位*/
+    top: 10px;
+    left: 9px;
+
+    /* 颜色 */
+    border-radius: 5px;
+    background-color: #c2c2c2;
+}
+/* 滑动条的块（拖动用的块） */
+#settingUi .volumeSlider .round{
+    /* 大小 */
+    width: 14px;
+    height: 14px;
+
+    /*定位（left属性的范围 是4到94）*/
+    top: 5px;
+    left: 94px;
+
+    /* 颜色 */
+    background-color: #767676;
+    border-radius: 50%;
+}
+
+
+
+/* 音量的值 */
+#settingUi .volumeNumber{
+    /* 大小 */
+    width: 50px;
+    height: 27px;
+
+    /*定位*/
+    top: 213px;
+    left: 358px;
+
+    /* 隐藏 */
+    opacity: 0;
+
+    /* 点击穿透 */
+    pointer-events:none;
+}
+/* 音量的值 的背景 */
+#settingUi .volumeNumber .background{
+    /* 大小 */
+    width: 50px;
+    height: 27px;
+
+    /*定位*/
+    top: 0px;
+    left: 0px;
+
+    /* 颜色 */
+    border-radius: 5px;
+    background-color: #696969;
+
+    /* 阴影 */
+    box-shadow: 0px 0px 5px 0px rgba(91, 91, 91, 0.25) ;
+}
+/* 音量的值 的数字 */
+#settingUi .volumeNumber .number{
+    /* 大小 */
+    width: 50px;
+    height: 27px;
+
+    /*定位*/
+    top: 2px;
+    left: 0px;
+
+    /*字体*/
+    font-family: "MaybeCuteFont";
+    font-size: 21px;
+    text-align: center;
+    color: #ffd700;
+
+    /*不能选中文字*/
+    user-select: none;
+}
+
+
+
+/*语言*/
+/* 当前的语言 */
+#settingUi .language .currentLanguage{
+    /* 大小 */
+    width: 80px;
+    height: 28px;
+
+    /*定位*/
+    top: 249px;
+    left: 267px;
+
+    /* 颜色 */
+    border-radius: 5px;
+    background-color: transparent;
+
+    /*鼠标光标*/
+    cursor: pointer;
+}
+/* 当前的语言-中文 */
+#settingUi .language .currentLanguage .chinese{
+    /*大小*/
+    width: 71px;
+    height: 24px;
+
+    /*定位*/
+    top: 2px;
+    left: 4px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/text/chinese/Chinese.png);
+
+    /* 隐藏 */
+    opacity: 0;
+}
+/* 当前的语言-英文 */
+#settingUi .language .currentLanguage .english{
+    /*大小*/
+    width: 71px;
+    height: 24px;
+
+    /*定位*/
+    top: 2px;
+    left: 4px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/text/english/English.png);
+}
+
+
+
+/* 选择的语言 */
+#settingUi .language .chooseLanguage{
+    /* 大小 */
+    width: 105px;
+    height: 74px;
+
+    /*定位*/
+    top: 172px;
+    left: 254px;
+
+    /* 颜色 */
+    border-radius: 10px;
+    background-color: #ffca00;
+
+    /* 阴影 */
+    box-shadow: 0px 0px 15px 0px rgba(122, 122, 122, 0.15) ;
+
+    /* 隐藏 */
+    visibility: hidden;
+}
+/* 按钮：中文 */
+#settingUi .language .chooseLanguage .chinese{
+    /*大小*/
+    width: 71px;
+    height: 24px;
+
+    /*定位*/
+    top: 7px;
+    left: 17px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/text/chinese/Chinese.png);
+
+    /*鼠标光标*/
+    cursor: pointer;
+}
+/* 按钮：英文 */
+#settingUi .language .chooseLanguage .english{
+    /*大小*/
+    width: 71px;
+    height: 24px;
+
+    /*定位*/
+    top: 39px;
+    left: 17px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/text/english/English.png);
+
+    /*鼠标光标*/
+    cursor: pointer;
+}
