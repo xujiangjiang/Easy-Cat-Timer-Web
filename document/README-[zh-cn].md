@@ -108,11 +108,11 @@ https://github.com/xujiangjiang/Easy-Cat-Timer
 
 ## 制作者名单
 
-**美术、程序：**絮大王
+**美术、程序**：絮大王
 
-**特别感谢：**瓜指导
+**特别感谢**：瓜指导
 
-**感谢：**小木、Amir Ammari、原浩成
+**感谢**：小木、Amir Ammari、原浩成
 
 <br/>
 
