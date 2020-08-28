@@ -1,10 +1,7 @@
 # Easy Cat Timer (web)
-
 This is a very simple cat timer, made using **HTML+CSS+TypeScript**.
 
 (in the process of making.)
-
-( [中文 ](./document/README-[zh-cn].md)请戳这里)
 
 <br/>
 
@@ -16,7 +13,7 @@ Easy Cat Timer is a simple countdown software.
 
 You only need to enter a number, click the [Start] button, and the countdown will begin!It's that simple!
 
-![image](document/image/en.png)
+![image](image/en.png)
 
 <br/>
 
