@@ -478,7 +478,6 @@ class CountdownUi{
         if(this.isOpenCompleteTip == true){
 
             // //停止声音
-            // TimerApp.Systems.AudioSystem.StopAudio(AudioType.Complete);
             this.OpenOrCloseCompleteTip(false);
 
         }

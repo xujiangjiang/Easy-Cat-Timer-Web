@@ -16,6 +16,7 @@ class LanguageSystem {
         let _resetTextElementInCountdownUi = document.querySelector("#countdownUi .blackCat .rope .text .reset"); //重置
         let _pauseTextElementInCountdownUi = document.querySelector("#countdownUi .yellowCat .rope .text .pause"); //暂停
         let _resumeTextElementInCountdownUi = document.querySelector("#countdownUi .yellowCat .rope .text .resume"); //恢复
+        let _timeIsUpElementInCountdownUi = document.querySelector("#countdownUi .timeIsUp .image"); //时间到了
         let _blackCatLineElementInCountdownUi = document.querySelector("#countdownUi .blackCat .rope .line"); //黑猫绳子
         /* 修改元素的图片 */
         //如果是中文
@@ -26,6 +27,7 @@ class LanguageSystem {
             _resetTextElementInCountdownUi.style.backgroundImage = "url(../../../asset/image/text/chinese/Reset.png)";
             _pauseTextElementInCountdownUi.style.backgroundImage = "url(../../../asset/image/text/chinese/Pause.png)";
             _resumeTextElementInCountdownUi.style.backgroundImage = "url(../../../asset/image/text/chinese/Resume.png)";
+            _timeIsUpElementInCountdownUi.style.backgroundImage = "url(../../../asset/image/text/chinese/TimeIsUp.png)";
         }
         //如果是英文
         else {
@@ -35,6 +37,7 @@ class LanguageSystem {
             _resetTextElementInCountdownUi.style.backgroundImage = "url(../../../asset/image/text/english/Reset.png)";
             _pauseTextElementInCountdownUi.style.backgroundImage = "url(../../../asset/image/text/english/Pause.png)";
             _resumeTextElementInCountdownUi.style.backgroundImage = "url(../../../asset/image/text/english/Resume.png)";
+            _timeIsUpElementInCountdownUi.style.backgroundImage = "url(../../../asset/image/text/english/TimeIsUp.png)";
         }
         /* 修改元素的位置 */
         //如果是中文
