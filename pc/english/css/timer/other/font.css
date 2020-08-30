@@ -1,0 +1,12 @@
+/*定义字体资源*/
+
+/* 文字 */
+@font-face{
+    font-family: "MaybeCuteFont";
+    src: url(../../../asset/font/MaybeCuteFont.otf);
+}
+
+/* 默认的文字 */
+*{
+    font-family: Metropolis,Inter,X-LocaleSpecific,sans-serif;
+}
