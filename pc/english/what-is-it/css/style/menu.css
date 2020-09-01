@@ -1,73 +1,32 @@
 /* 上方菜单 */
-#topMenu{
+#menu{
     /* 大小 */
     width: 100%;
     height: 0px;
 
     /* 定位 */
-    position: absolute;
+    position: fixed;
 
     /* 位置 */
     top: 0px;
     right: 0px;
 }
 /* 上方菜单中的所有元素 */
-#topMenu *{
+#menu *{
     /* 定位 */
     position: absolute;
 }
 
 
 
-/* 打开按钮 */
-#topMenu .openButton{
-    /* 大小 */
-    width: 36px;
-    height: 32px;
-    border-radius: 5px;
-    
-    /* 位置 */
-    top: 22px;
-    right: 40px;
-
-    /* 颜色 */
-    background-color: transparent;
-    
-    /*鼠标光标*/
-    cursor: pointer;
-}
-/* 打开按钮的图片 */
-#topMenu .openButton .image{
-    /* 大小 */
-    width: 20px;
-    height: 17px;
-
-    /* 居中 */
-    top: 50%;
-    margin-top: -8px;
-    left: 50%;
-    margin-left: -10px;
-
-    /*图片*/
-    background-image: url(../../../asset/image/document/DropDownButton.png);
-
-    /* 透明度 */
-    opacity: 0.65;
-
-    /* 点击穿透 */
-    pointer-events:none;
-}
-
-
-
 /* 菜单 */
-#topMenu .menu{
+#menu{
     /* 大小 */
     width: 100%;
     height: 85px;
 
     /* 位置 */
-    top: -115px;
+    top: 0px;
 
     /* 颜色 */
     background-color: white;
@@ -76,7 +35,7 @@
     box-shadow: 0px 0px 20px 0px rgba(91, 91, 91, 0.25) ;
 }
 /* 菜单的按钮 */
-#topMenu .menu .buttons{
+#menu .buttons{
     /* 大小：自适应 */
     min-width: 200px;
     max-width: 1308px;
@@ -96,7 +55,7 @@
 
 
 /* 图片：Logo */
-#topMenu .menu .buttons .logo{
+#menu .buttons .logo{
     /* 大小 */
     width: 65px;
     height: 85px;
@@ -114,7 +73,7 @@
     /*鼠标光标*/
     cursor: pointer;
 }
-#topMenu .menu .buttons .logo .image{
+#menu .buttons .logo .image{
     /* 大小 */
     width: 65px;
     height: 65px;
@@ -124,12 +83,12 @@
     left: 1px;
 
     /*图片*/
-    background-image: url(../../../asset/image/logo/Logo-Samll.png);
+    background-image: url(../../asset/Logo-Samll.png);
 }
 
 
 /* 图片：空白 */
-#topMenu .menu .buttons .null{   
+#menu .buttons .null{   
     /* 定位 */
     position: relative;
 
@@ -139,7 +98,7 @@
 
 
 /* 图片：版本号 */
-#topMenu .menu .buttons .version{
+#menu .buttons .version{
     /* 大小 */
     width: 100px;
     height: 85px;
@@ -152,7 +111,7 @@
     position: relative;
 }
 /* 版本号：矩形 */
-#topMenu .menu .buttons .version .rect{
+#menu .buttons .version .rect{
     /* 大小 */
     width: 45px;
     height: 22px;
@@ -166,7 +125,7 @@
     background-color: #656565;
 }
 /* 版本号：尖角 */
-#topMenu .menu .buttons .version .corner{
+#menu .buttons .version .corner{
     /* 大小 */
     width: 0px;
     height: 0px;
@@ -183,7 +142,7 @@
     transform: scale(1,0.55);
 }
 /* 版本号：文字 */
-#topMenu .menu .buttons .version .text{
+#menu .buttons .version .text{
     /* 大小 */
     width: 45px;
     height: 22px;
@@ -208,7 +167,7 @@
 
 
 /* 按钮：[这是什么？] */
-#topMenu .menu .buttons .whatIsIt{
+#menu .buttons .whatIsIt{
     /* 大小 */
     height: 85px;
 
@@ -221,7 +180,7 @@
     /* 定位 */
     position: relative;
 }
-#topMenu .menu .buttons .whatIsIt .text{
+#menu .buttons .whatIsIt .text{
     /* 定位 */
     position: relative;
 
@@ -238,7 +197,7 @@
     /*鼠标光标*/
     cursor: pointer;
 }
-#topMenu .menu .buttons .whatIsIt .line{
+#menu .buttons .whatIsIt .line{
     /* 大小 */
     width: 100%;
     height: 4px;
@@ -262,7 +221,7 @@
 
 
 /* 按钮：[语言] */
-#topMenu .menu .buttons .language{
+#menu .buttons .language{
     /* 大小 */
     height: 85px;
 
@@ -275,7 +234,7 @@
     /* 定位 */
     position: relative;
 }
-#topMenu .menu .buttons .language .text{
+#menu .buttons .language .text{
     /* 定位 */
     position: relative;
 
@@ -292,7 +251,7 @@
     /*鼠标光标*/
     cursor: pointer;
 }
-#topMenu .menu .buttons .language .line{
+#menu .buttons .language .line{
     /* 大小 */
     width: 100%;
     height: 4px;
@@ -316,7 +275,7 @@
 
 
 /* 按钮:下载 */
-#topMenu .menu .buttons .download{
+#menu .buttons .download{
     /* 大小 */
     width: 127px;
     height: 41px;
@@ -352,45 +311,8 @@
 }
 
 
-/* 按钮：关闭 */
-#topMenu .menu .buttons .close{
-    /* 大小 */
-    width: 28px;
-    height: 28px;
-    border-radius: 3px;
-
-    /* 颜色 */
-    background-color: white;
-
-    /* 布局 */
-    flex-grow:0;
-    flex-shrink: 0;
-    margin-right: 23px;
-    margin-top: 31px;
-
-    /* 定位 */
-    position: relative;
-    
-    /*鼠标光标*/
-    cursor: pointer;
-}
-#topMenu .menu .buttons .close .image{
-    /* 大小 */
-    width: 20px;
-    height: 19px;
-
-    /* 定位 */
-    top: 4px;
-    left: 4px;
-
-    /*图片*/
-    background-image: url(../../../asset/image/document/CloseButton.png);
-}
-
-
-
 /* 语言:框 */
-#topMenu .menu .buttons .language .choose{
+#menu .buttons .language .choose{
     /* 大小 */
     width: 100px;
     height: 90px;
@@ -404,7 +326,7 @@
     visibility: hidden;
     opacity: 0;
 }
-#topMenu .menu .buttons .language .choose .box{
+#menu .buttons .language .choose .box{
     /* 大小 */
     width: 100px;
     height: 85px;
@@ -416,7 +338,7 @@
     /* 颜色 */
     background-color: #ececec;
 }
-#topMenu .menu .buttons .language .choose .corner{
+#menu .buttons .language .choose .corner{
     /* 大小 */
     width: 0px;
     height: 0px;
@@ -434,7 +356,7 @@
 }
 
 /* 语言:英文 */
-#topMenu .menu .buttons .language .choose .english{
+#menu .buttons .language .choose .english{
     /* 大小 */
     width: 80px;
     height: 24px;
@@ -465,7 +387,7 @@
 }
 
 /* 语言:中文 */
-#topMenu .menu .buttons .language .choose .chinese{
+#menu .buttons .language .choose .chinese{
     /* 大小 */
     width: 80px;
     height: 24px;

@@ -1,9 +1,5 @@
 /*去掉默认的样式*/
 
-*{
-    font-family: Helvetica,Arial,Verdana,sans-serif;
-}
-
 body{
     margin: 0px;
     padding: 0px;
@@ -17,12 +13,12 @@ button{
     background-color: transparent;
 }
 
-p{
-    padding: 0px;
-    margin: 0px;
+*{
+    /* 文字 */
+    font-family: Helvetica,Arial,Verdana,sans-serif;
 }
 
-input::selection, p::selection{
+*::selection{
     background-color: rgba(169, 169, 169, 0.6);
 }
 

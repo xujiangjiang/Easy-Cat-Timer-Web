@@ -1,0 +1,52 @@
+/* 视频 */
+#video{
+    /* 大小 */
+    width: 100%;
+    height: 100%;
+
+    /* 定位 */
+    position: fixed;
+
+    /* 位置 */
+    left: 0px;
+    top: 0px;
+
+    /* 颜色 */
+    background-color: transparent;
+
+    /* 隐藏 */
+    visibility: hidden;
+}
+
+/* 视频控件 */
+#video .video{
+    /* 大小 */
+    width: 80%;
+    min-width: 500px;
+    max-width: 1280px;
+    
+    /* 定位 */
+    position: absolute;
+
+    /* 居中 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 按钮:关闭 */
+#video .close{
+    /* 大小 */
+    width: 100%;
+    height: 100%;
+
+    /* 位置 */
+    left: 0;
+    top: 0;
+
+    /* 颜色 */
+    background-color: rgba(37, 37, 37, 0.6);
+
+    /* 定位 */
+    position: absolute;
+}

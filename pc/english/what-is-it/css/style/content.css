@@ -1,0 +1,96 @@
+/* 内容 */
+#content{
+    /* 大小 */
+    width: 35%;
+    min-width: 400px;
+    max-width: 575px;
+
+    /* 边距 */
+    padding: 30px;
+
+    /* 居中 */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+
+/* 标题1 */
+#content h1{
+    /* 文字 */
+    font-size: 48px;
+    color: #464644;
+    font-weight: bold;
+    
+    /* 边距 */
+    padding: 0px;
+    margin: 10px 0px 15px 0px;
+}
+
+/* 标题2 */
+#content h2{
+    /* 文字 */
+    font-size: 24px;
+    color: #464644;
+    font-weight: bold;
+    
+    /* 边距 */
+    padding: 0px;
+    margin: 10px 0px 15px 0px;
+}
+
+/* 所有的文字 */
+#content p{
+    /* 文字 */
+    font-size: 15px;
+    color: #6a6a6a;
+    font-weight: normal;
+
+    /* 边距 */
+    padding: 3px 2px ;
+    margin: 0px;
+}
+
+/* 所有的b */
+#content b{
+    /* 文字 */
+    font-size: 15px;
+    color: #6a6a6a;
+    font-weight: bold;
+
+    /* 边距 */
+    padding: 3px 2px;
+    margin: 0px;
+
+    /* 布局 */
+    display: block;
+}
+
+/* 所有的li */
+#content li{
+    /* 文字 */
+    font-size: 15px;
+    color: #6a6a6a;
+    font-weight: normal;
+
+    /* 边距 */
+    padding: 2px;
+    margin: 0px;
+}
+
+/* 所有的a */
+#content a{
+    /* 文字 */
+    font-size: 15px;
+    color: #6a6a6a;
+    font-weight: normal;
+
+    /* 边距 */
+    padding: 3px 2px;
+    margin: 0px;
+
+    /* 布局 */
+    display: block;
+
+    /* 下划线 */
+    text-decoration: underline;
+}
