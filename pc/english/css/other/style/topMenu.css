@@ -28,7 +28,7 @@
     
     /* 位置 */
     top: 22px;
-    right: 40px;
+    right: 2%;
 
     /* 颜色 */
     background-color: transparent;
@@ -68,6 +68,7 @@
 
     /* 位置 */
     top: -115px;
+    left: 0px;
 
     /* 颜色 */
     background-color: white;

@@ -1,0 +1,32 @@
+/* 如果屏幕宽度大于等于600px */
+@media screen and (min-width:600px){
+
+    /* 菜单栏 */
+    /* 按钮:下载 */
+    #menu .buttons .download{
+        /* flex布局（子元素） */
+        flex-shrink: 0;
+
+        /* 显示 */
+        visibility: visible;
+    }
+
+}
+
+
+
+/* 如果屏幕宽度小于等于599px */
+@media screen and (max-width:599px){
+
+    /* 菜单栏 */
+    /* 按钮:下载 */
+    #menu .buttons .download{
+        /* flex布局（子元素） */
+        flex-shrink: 1;
+
+        /* 隐藏 */
+        visibility: hidden;
+    }
+
+}
+

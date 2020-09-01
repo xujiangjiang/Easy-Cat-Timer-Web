@@ -26,7 +26,7 @@ input::selection, p::selection{
     background-color: rgba(169, 169, 169, 0.6);
 }
 
-div,button{
+div,button,a{
     /*让图片清晰*/
     backface-visibility:hidden;
     -webkit-backface-visibility:hidden;

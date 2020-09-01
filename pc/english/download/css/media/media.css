@@ -1,0 +1,130 @@
+/* 如果屏幕宽度大于等于850px */
+@media screen and (min-width:850px){
+
+    /* 菜单栏 */
+    /* 按钮:下载 */
+    #menu .buttons .download{
+        /* flex布局（子元素） */
+        flex-shrink: 0;
+
+        /* 显示 */
+        visibility: visible;
+    }
+
+
+
+    /* 上方 */
+    #main .top{
+        /* 大小 */
+        height: 465px;
+
+        /* flex布局（父元素） */
+        flex-direction: row;
+    }
+    /* 猫咪 */
+    #main .top .cat{
+        /* 大小 */
+        width: 377px;
+        height: 418px;
+
+        /* 位置 */
+        top: 17px;
+        left: 13px;
+        margin-left: 0px;
+    }
+    /* 其他 */
+    #main .top .other{
+        /* 大小 */
+        width: 473px;
+        height: 465px;
+    }
+
+
+
+    /* 下方 */
+    /* 其他的下载地址 */
+    #main .bottom .alsoInHere{
+        /* 位置 */
+        margin-left: 43px;
+    }
+    /* 源代码 */
+    #main .bottom .sourceCode{
+        /* 位置 */
+        margin-left: 145px;
+    }
+
+}
+
+
+/* 如果屏幕宽度小于等于849px */
+@media screen and (max-width:849px){
+
+    /* 菜单栏 */
+    /* 按钮:下载 */
+    #menu .buttons .download{
+        /* flex布局（子元素） */
+        flex-shrink: 1;
+
+        /* 隐藏 */
+        visibility: visible;
+    }
+
+
+
+    /* 上方 */
+    #main .top{
+        /* 大小 */
+        height: auto;
+
+        /* flex布局（父元素） */
+        flex-direction: column;
+    }
+    /* 猫咪 */
+    #main .top .cat{
+        /* 大小 */
+        width: 302px;
+        height: 344px;
+
+        /* 居中 */
+        top: 17px;
+        left: 50%;
+        margin-left: -151px;
+    }
+    /* 其他 */
+    #main .top .other{
+        /* 大小 */
+        width: 473px;
+        height: 360px;
+    }
+
+
+
+    /* 下方 */
+    /* 其他的下载地址 */
+    #main .bottom .alsoInHere{
+        /* 位置 */
+        margin-left: 20px;
+    }
+    /* 源代码 */
+    #main .bottom .sourceCode{
+        /* 位置 */
+        margin-left: 100px;
+    }
+
+}
+
+
+/* 如果屏幕宽度小于等于599px */
+@media screen and (max-width:599px){
+
+    /* 菜单栏 */
+    /* 按钮:下载 */
+    #menu .buttons .download{
+        /* flex布局（子元素） */
+        flex-shrink: 1;
+
+        /* 隐藏 */
+        visibility: hidden;
+    }
+
+}

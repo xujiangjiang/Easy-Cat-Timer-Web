@@ -112,7 +112,7 @@ https://github.com/xujiangjiang/Easy-Cat-Timer
 
 **特别感谢**：瓜指导
 
-**感谢**：小木、Amir Ammari、原浩成
+**感谢**：小木、Pw、Amir Ammari、原浩程
 
 <br/>
 

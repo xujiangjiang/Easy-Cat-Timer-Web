@@ -34,7 +34,7 @@
     /* 定位 */
     position: relative;
 
-    /* 居中 */
+    /* 位置 */
     left: 0px;
     top: 0px;
 
@@ -58,6 +58,7 @@
     /* 位置 */
     top: 17px;
     left: 13px;
+    margin-left: 0px;
 
     /*图片*/
     background-image: url(../../asset/Cat.png);
@@ -198,6 +199,9 @@
     display: flex;
     flex-direction: column;
 
+    /* 自适应 */
+    min-width: 120px;
+
     /* 位置 */
     margin-left: 43px;
 }
@@ -248,6 +252,9 @@
     /* flex布局（父元素） */
     display: flex;
     flex-direction: column;
+
+    /* 自适应 */
+    min-width: 120px;
 
     /* 位置 */
     margin-left: 145px;

@@ -17,10 +17,6 @@ class SettingUi{
     
     //当前语言 按钮
     private currentLanguageButtonElement:HTMLElement;
-    //英语 图片
-    private englishImageElement:HTMLElement;
-    //中文 图片
-    private chineseImageElement:HTMLElement;
     //选择语言 面板
     private chooseLanguagePanelElement:HTMLElement;
     //英语 按钮
@@ -73,8 +69,6 @@ class SettingUi{
         this.uiElement = document.querySelector("#settingUi");
         this.closeButtonElement = document.querySelector("#settingUi .closeButton");
         this.currentLanguageButtonElement = document.querySelector("#settingUi .language .currentLanguage");
-        this.englishImageElement = document.querySelector("#settingUi .language .currentLanguage .english");
-        this.chineseImageElement = document.querySelector("#settingUi .language .currentLanguage .chinese");
         this.chooseLanguagePanelElement = document.querySelector("#settingUi .language .chooseLanguage");
         this.englishButtonElement = document.querySelector("#settingUi .language .chooseLanguage .english");
         this.chineseButtonElement = document.querySelector("#settingUi .language .chooseLanguage .chinese");
@@ -93,7 +87,6 @@ class SettingUi{
         let onClickCurrentLanguageButton = this.OnClickCurrentLanguageButton.bind(this);
         let onClickEnglishButton = this.OnClickEnglishButton.bind(this);
         let onClickChineseButton = this.OnClickChineseButton.bind(this);
-        let onClickGithubButton = this.OnClickGithubButton.bind(this);
         let onMouseEnterStaffButton = this.OnMouseEnterStaffButton.bind(this);
         let onMouseLeaveStaffButton = this.OnMouseLeaveStaffButton.bind(this);
         let onMouseEnterVolumeSliderPanel = this.OnMouseEnterVolumeSliderPanel.bind(this);
@@ -110,7 +103,6 @@ class SettingUi{
         this.currentLanguageButtonElement.onclick = onClickCurrentLanguageButton;
         this.englishButtonElement.onclick = onClickEnglishButton;
         this.chineseButtonElement.onclick = onClickChineseButton;
-        this.githubButtonElement.onclick = onClickGithubButton;
 
         this.staffButtonElement.onmouseenter = onMouseEnterStaffButton;
         this.staffButtonElement.onmouseleave = onMouseLeaveStaffButton;
@@ -259,13 +251,6 @@ class SettingUi{
 
         //关闭[选择语言的面板]
         this.OpenOrCloseChooseLanguagePanel(false);
-
-    }
-    //当点击[Github]按钮时
-    private OnClickGithubButton():void{
-
-        //打开[Easy Cat Timer]的 Github页面
-        window.open("https://github.com/xujiangjiang/Easy-Cat-Timer","_blank");
 
     }
 
