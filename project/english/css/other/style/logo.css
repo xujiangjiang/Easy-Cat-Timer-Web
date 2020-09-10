@@ -1,0 +1,31 @@
+/* 图片：Logo */
+#logo{
+    /* 大小 */
+    width: 352px;
+    height: 348px;
+
+    /* 定位 */
+    position: relative;
+
+    /* 位置 */
+    top: 44px;
+    left: 5px;
+}
+
+#logo *{
+    /* 定位 */
+    position: absolute;
+}
+
+#logo .image{
+    /* 大小 */
+    width: 352px;
+    height: 348px;
+
+    /* 位置 */
+    top: 0px;
+    left: 0px;
+
+    /*图片*/
+    background-image: url(../../../asset/image/logo/Logo.png);
+}

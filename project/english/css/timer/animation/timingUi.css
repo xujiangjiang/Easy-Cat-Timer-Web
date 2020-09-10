@@ -1,0 +1,97 @@
+/* 计时器的[定时界面] 的 动画 */
+/* （timingUi中的动画） */
+
+/*按钮：分钟数 增加*/
+/* [当鼠标移出时] */
+#timingUi .minuteButtons .addButton{
+    /* 过渡 */
+    transition: transform 0.1s;
+    /* 变换 */
+    transform: scale(1);
+}
+/* [当鼠标按下时] */
+#timingUi .minuteButtons .addButton:active{
+    /* 变换 */
+    transform: scale(0.75);
+}
+
+
+
+/*按钮：分钟数 减少*/
+/* [当鼠标移出时] */
+#timingUi .minuteButtons .lessButton{
+    /* 过渡 */
+    transition: transform 0.1s;
+    /* 变换 */
+    transform: scale(1);
+}
+/* [当鼠标按下时] */
+#timingUi .minuteButtons .lessButton:active{
+    /* 变换 */
+    transform: scale(0.75);
+}
+
+
+
+/*按钮：秒钟数 增加*/
+/* [当鼠标移出时] */
+#timingUi .secondsButtons .addButton{
+    /* 过渡 */
+    transition: transform 0.1s;
+    /* 变换 */
+    transform: scale(1);
+}
+/* [当鼠标按下时] */
+#timingUi .secondsButtons .addButton:active{
+    /* 变换 */
+    transform: scale(0.75);
+}
+
+
+
+/*按钮：秒钟数 减少*/
+/* [当鼠标移出时] */
+#timingUi .secondsButtons .lessButton{
+    /* 过渡 */
+    transition: transform 0.1s;
+    /* 变换 */
+    transform: scale(1);
+}
+/* [当鼠标按下时] */
+#timingUi .secondsButtons .lessButton:active{
+    /* 变换 */
+    transform: scale(0.75);
+}
+
+
+
+/*按钮：开始*/
+/* [当鼠标移出时] */
+#timingUi .start{
+    /* 过渡 */
+    transition: transform 0.1s;
+    /* 变换 */
+    transform: scale(1);
+}
+/* [当鼠标按下时] */
+#timingUi .start:active{
+    /* 变换 */
+    transform: scale(0.75);
+}
+
+
+
+/* 图片：下划线 */
+/* [当鼠标移出时] */
+#timingUi .start .line{
+    /* 过渡 */
+    transition: opacity 0.1s;
+
+    /* 透明度 */
+    opacity: 0;
+}
+/* [当鼠标移入strat时,下划线] */
+#timingUi .start:hover .line{
+    /* 透明度 */
+    opacity: 1;
+}

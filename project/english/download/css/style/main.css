@@ -1,0 +1,292 @@
+/* main */
+#main{
+    /* 大小 */
+    width: 90%;
+    max-width: 860px;
+
+    /* 定位 */
+    position: absolute;
+
+    /* 居中 */
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 140px;
+
+    /* flex布局（父元素） */
+    display: flex;
+    flex-direction: column;
+
+    /* 边距 */
+    margin-bottom: 200px;
+}
+
+
+
+
+
+
+/* 上方 */
+#main .top{
+    /* 大小 */
+    width: 100%;
+    height: 465px;
+
+    /* 定位 */
+    position: relative;
+
+    /* 位置 */
+    left: 0px;
+    top: 0px;
+
+    /* flex布局（父元素） */
+    display: flex;
+    flex-direction: row;
+}
+/* 猫咪 */
+#main .top .cat{
+    /* 大小 */
+    width: 377px;
+    height: 418px;
+
+    /* 定位 */
+    position: relative;
+
+    /* flex布局（子元素） */
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    /* 位置 */
+    top: 17px;
+    left: 13px;
+    margin-left: 0px;
+
+    /*图片*/
+    background-image: url(../../asset/Cat.png);
+}
+
+/* 其他 */
+#main .top .other{
+    /* 大小 */
+    width: 473px;
+    height: 465px;
+
+    /* 定位 */
+    position: relative;
+
+    /* 位置 */
+    right: 0px;
+    top: 0px;
+
+    /* 边距 */
+    margin-left: 10px;
+
+    /* flex布局（父元素） */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    /* flex布局（子元素） */
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+/* 标题 */
+#main .top .other .title1{
+    /* 文字 */
+    color: #4a4a4a;
+    font-size: 40px;
+    font-weight: bold;
+
+    /* 位置 */
+    margin-top: 0px;
+    margin-left: 2px;
+}
+#main .top .other .title2{
+    /* 文字 */
+    color: #4a4a4a;
+    font-size: 40px;
+    font-weight: bold;
+
+    /* 位置 */
+    margin-top: -3px;
+    margin-left: 2px;
+}
+/* 文字 */
+#main .top .other .text{
+    /* 文字 */
+    color: #b5b5b5;
+    font-size: 16px;
+
+    /* 位置 */
+    margin-top: 6px;
+    margin-left: 4px;
+}
+/* 按钮 */
+#main .top .other .button{
+    /* 大小 */
+    width: 253px;
+    height: 51px;
+
+    /* 位置 */
+    margin-top: 35px;
+    margin-left: 0px;
+
+    /* 边框 */
+    border-width: 2px;
+    border-style: solid;
+    border-color: #f4c01a;
+    border-radius: 10px;
+
+    /* 颜色 */
+    background-color: #ffcd2f;
+
+    /* 文字 */
+    color: #4a463c;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+
+    /*鼠标光标*/
+    cursor: pointer;
+}
+/* 空 */
+#main .top .other .null{
+    /* 位置 */
+    margin-bottom: 53px;
+}
+
+
+
+
+
+
+/* 分割线 */
+#main .line{
+    /* 大小 */
+    width: 100%;
+    height: 2px;
+
+    /* 位置 */
+    margin-top: 54px;
+    margin-left: 5px;
+
+    /* 颜色 */
+    background-color: #e1e1e1;
+}
+
+
+
+
+
+
+/* 下方 */
+#main .bottom{
+    /* 大小 */
+    width: 100%;
+    height: 10px;
+
+    /* flex布局（父元素） */
+    display: flex;
+    flex-direction: row;
+
+    /* 位置 */
+    margin-top: 58px;
+}
+
+/* 其他的下载地址 */
+#main .bottom .alsoInHere{
+    /* flex布局（父元素） */
+    display: flex;
+    flex-direction: column;
+
+    /* 自适应 */
+    min-width: 120px;
+
+    /* 位置 */
+    margin-left: 43px;
+}
+/* 标题 */
+#main .bottom .alsoInHere .title{
+    /* 文字 */
+    color: #5a5a5a;
+    font-size: 17px;
+    font-weight: bold;
+
+    /* 位置 */
+    margin-top: 0px;
+    margin-left: 0px;
+}
+/* Steam */
+#main .bottom .alsoInHere .steam{
+    /* 文字 */
+    color: #777777;
+    font-size: 15px;
+
+    /* 位置 */
+    margin-top: 34px;
+    margin-left: 0px;
+}
+/* Github */
+#main .bottom .alsoInHere .github{
+    /* 文字 */
+    color: #777777;
+    font-size: 15px;
+
+    /* 位置 */
+    margin-top: 16px;
+    margin-left: 0px;
+}
+/* Other */
+#main .bottom .alsoInHere .other{
+    /* 文字 */
+    color: #777777;
+    font-size: 15px;
+
+    /* 位置 */
+    margin-top: 16px;
+    margin-left: 0px;
+}
+
+/* 源代码 */
+#main .bottom .sourceCode{
+    /* flex布局（父元素） */
+    display: flex;
+    flex-direction: column;
+
+    /* 自适应 */
+    min-width: 120px;
+
+    /* 位置 */
+    margin-left: 145px;
+}
+/* 标题 */
+#main .bottom .sourceCode .title{
+    /* 文字 */
+    color: #5a5a5a;
+    font-size: 17px;
+    font-weight: bold;
+
+    /* 位置 */
+    margin-top: 0px;
+    margin-left: 0px;
+}
+/* Steam */
+#main .bottom .sourceCode .desktop{
+    /* 文字 */
+    color: #777777;
+    font-size: 15px;
+
+    /* 位置 */
+    margin-top: 34px;
+    margin-left: 0px;
+}
+/* Github */
+#main .bottom .sourceCode .web{
+    /* 文字 */
+    color: #777777;
+    font-size: 15px;
+
+    /* 位置 */
+    margin-top: 16px;
+    margin-left: 0px;
+}

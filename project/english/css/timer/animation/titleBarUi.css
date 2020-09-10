@@ -1,0 +1,57 @@
+/* 计时器的[标题栏] 的 动画 */
+/* （titleBarUi中的动画） */
+
+
+
+/*按钮：最小化*/
+/* [当鼠标移出时] */
+#titleBarUi .minimumButton{
+    /* 过渡 */
+    transition: transform 0.1s, background-color 0.1s;
+    /* 颜色 */
+    background-color: transparent;
+}
+/* [当鼠标移入时] */
+#titleBarUi .minimumButton:hover{
+    /* 颜色 */
+    background-color: #e3e3e3;
+}
+
+
+
+/*按钮：关闭*/
+/* [当鼠标移出时] */
+#titleBarUi .closeButton{
+    /* 过渡 */
+    transition: transform 0.1s, background-color 0.1s;
+    /* 颜色 */
+    background-color: transparent;
+    /* 变换 */
+    transform: scale(1);
+}
+/* [当鼠标移入时] */
+#titleBarUi .closeButton:hover{
+    /* 颜色 */
+    background-color: #e3e3e3;
+}
+/* [当鼠标按下时] */
+#titleBarUi .closeButton:active{
+    /* 变换 */
+    transform: scale(0.75);
+}
+
+
+
+/*按钮：设置*/
+/* [当鼠标移出时] */
+#titleBarUi .settingToggle{
+    /* 过渡 */
+    transition: transform 0.1s, background-color 0.1s;
+    /* 变换 */
+    transform: scale(1);
+}
+/* [当鼠标按下时] */
+#titleBarUi .settingToggle:active{
+    /* 变换 */
+    transform: scale(0.85, 0.75);
+}

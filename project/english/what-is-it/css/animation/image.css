@@ -1,0 +1,17 @@
+/* 网页的[图片] 的 动画 */
+/* （image中的动画） */
+
+
+/* 按钮:[观看视频] */
+/* [当鼠标移出时] */
+#image .showVideo{
+    /* 过渡 */
+    transition: transform 0.1s;
+    /* 变换 */
+    transform: scale(1,1);
+}
+/* [当鼠标点击时] */
+#image .showVideo:active{
+    /* 变换 */
+    transform: scale(0.9,0.8);
+}

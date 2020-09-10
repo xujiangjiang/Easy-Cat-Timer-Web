@@ -1,0 +1,104 @@
+/* 图片 */
+#image{
+    /* 边距 */
+    padding: 30px;
+
+    /* 居中 */
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* 图片：计时器 */
+#image .timerImage{
+    /* 大小 */
+    width: 434px;
+    height: 384px;
+
+    /* 居中 */
+    margin: 0px auto;
+
+    /* 图片 */
+    background-image: url(../../asset/Timer.png);
+}
+
+
+/* 按钮：观看视频 */
+#image .showVideo{
+    /* 大小 */
+    width: 127px;
+    height: 41px;
+    border-radius: 10px;
+
+    /* 定位 */
+    position: relative;
+
+    /* 位置 */
+    top: 340px;
+    left: 340px;
+
+    /* 颜色 */
+    background-color: #ffcd2f;
+
+    /*鼠标光标*/
+    cursor: pointer;
+}
+#image .showVideo .circle{
+    /* 大小 */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    /* 定位 */
+    position: absolute;
+
+    /* 位置 */
+    top: 50%;
+    margin-top: -14px;
+    left: 10px;
+
+    border: #4a463c 3px solid;
+}
+#image .showVideo .corner{
+    /* 大小 */
+    width: 0px;
+    height: 0px;
+
+    /* 定位 */
+    position: absolute;
+
+    /* 位置 */
+    top: 50%;
+    margin-top: -11px;
+    left: 20px;
+
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #4a463c;
+
+    transform: scaleY(0.75);
+}
+#image .showVideo .text{
+    /* 大小 */
+    height: 41px;
+
+    /* 定位 */
+    position: absolute;
+    
+    /* 位置 */
+    top: 50%;
+    margin-top: -22px;
+    left: 42px;
+
+    /* 文字 */
+    text-align: center;
+    white-space: nowrap;
+    line-height: 41px;
+    color: #4a463c;
+    font-size: 15px;
+    font-weight: bold;
+
+    /*不能选中文字*/
+    user-select: none;
+}

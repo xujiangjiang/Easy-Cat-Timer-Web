@@ -1,0 +1,50 @@
+/* [计时器] */
+
+
+/*计时器的盒子*/
+#timerApp{
+
+    /*大小*/
+    width: 394px;
+    height: 344px;
+    border-radius: 20px;
+
+    /*定位*/
+    position: absolute;
+
+    /*居中对齐*/
+    left: 394px;
+    top: 38px;
+
+    /*阴影*/
+    box-shadow: 0px 0px 20px 0px rgba(91, 91, 91, 0.25) ;
+
+    /*颜色*/
+    background-color: transparent;
+    opacity: 1;
+
+    /*超出边框的内容 自动隐藏*/
+    overflow: hidden;
+
+}
+
+/*界面 的盒子*/
+#timerApp .ui{
+
+    /*大小*/
+    width: 394px;
+    height: 344px;
+    border-radius: 20px;
+
+    /*定位*/
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+}
+
+/* 界面的 所有元素 */
+#timerApp *{
+    /*定位*/
+    position: absolute;
+}

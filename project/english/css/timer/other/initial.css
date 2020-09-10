@@ -1,0 +1,44 @@
+/*去掉默认的样式*/
+
+*{
+    font-family: Helvetica,Arial,Verdana,sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+button{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: none;
+    background-color: transparent;
+}
+
+p{
+    padding: 0px;
+    margin: 0px;
+}
+
+input::selection, p::selection{
+    background-color: rgba(169, 169, 169, 0.6);
+}
+
+div,button,a{
+    /*让图片清晰*/
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    -ms-backface-visibility:hidden;
+
+    /*图片*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}

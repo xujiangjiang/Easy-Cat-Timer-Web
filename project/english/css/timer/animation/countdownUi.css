@@ -1,0 +1,149 @@
+/* 计时器的[倒计时界面] 的 动画 */
+/* （countdownUi中的动画） */
+
+
+/* 按钮：黑色猫咪 */
+/* [当鼠标移出时] */
+#countdownUi .blackCat .cat{
+    /* 过渡 */
+    transition: top 0.25s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    /* 定位 */
+    top: 250px;
+}
+/* [当鼠标移入时] */
+#countdownUi .blackCat .cat:hover{
+    /* 过渡 */
+    transition: top 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+    /* 定位 */
+    top: 134px;
+}
+
+
+/* 按钮：黑色猫咪的嘴巴 */
+/* [当鼠标移出时] */
+#countdownUi .blackCat .cat .mouth{
+    /* 过渡 */
+    transition: opacity 0.25s step-end, transform 0.15s;
+
+    /* 透明度 */
+    opacity: 0;
+
+    /* 变换 */
+    transform: scale(1);
+}
+/* [当鼠标移入黑猫时，黑猫的嘴巴] */
+#countdownUi .blackCat .cat:hover .mouth{
+    /* 过渡 */
+    transition: opacity 0s;
+
+    /* 透明度 */
+    opacity: 1;
+}
+
+
+/* 图片：黑色猫咪的闭嘴 */
+#countdownUi .blackCat .cat .close{
+    /* 过渡 */
+    transition: transform 0.2s;
+
+    /* 变换 */
+    transform-origin: center bottom;
+    transform: scale(1, 0.8);
+
+    /* 透明度 */
+    opacity: 0;
+}
+
+
+/* 动画：黑猫绳子摆动的动画 */
+@keyframes blackCatRopeSwingAnimation{
+    0%{
+        transform: translateX(-8px);
+    }
+    100%{
+        transform: translateX(5px);
+    }
+}
+/* 按钮：黑色猫咪的绳子 */
+/* [当鼠标移出时] */
+#countdownUi .blackCat .rope{
+    /* 过渡 */
+    transition: top 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+
+
+
+
+
+
+
+/* 按钮：黄色猫咪 */
+/* [当鼠标移出时] */
+#countdownUi .yellowCat .cat{
+    /* 过渡 */
+    transition: top 0.25s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    /* 定位 */
+    top: 246px;
+}
+/* [当鼠标移入时] */
+#countdownUi .yellowCat .cat:hover{
+    /* 过渡 */
+    transition: top 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+    /* 定位 */
+    top: 126px;
+}
+
+
+/* 按钮：黄猫的嘴巴 */
+/* [当鼠标移出时] */
+#countdownUi .yellowCat .cat .mouth{
+    /* 过渡 */
+    transition: opacity 0.25s step-end, transform 0.15s;
+
+    /* 透明度 */
+    opacity: 0;
+
+    /* 变换 */
+    transform: scale(1);
+}
+/* [当鼠标移入黄猫时，黄猫的嘴巴] */
+#countdownUi .yellowCat .cat:hover .mouth{
+    /* 过渡 */
+    transition: opacity 0s;
+
+    /* 透明度 */
+    opacity: 1;
+}
+
+
+/* 图片：黄猫的闭嘴 */
+#countdownUi .yellowCat .cat .close{
+    /* 过渡 */
+    transition: transform 0.2s;
+
+    /* 变换 */
+    transform-origin: center bottom;
+    transform: scale(0.8);
+
+    /* 透明度 */
+    opacity: 0;
+}
+
+
+/* 动画：黄猫绳子摆动的动画 */
+@keyframes yellowCatRopeSwingAnimation{
+    0%{
+        transform: translateX(-8px);
+    }
+    100%{
+        transform: translateX(4px);
+    }
+}
+/* 按钮：黄猫的绳子 */
+/* [当鼠标移出时] */
+#countdownUi .yellowCat .rope{
+    /* 过渡 */
+    transition: top 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+}

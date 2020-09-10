@@ -1,0 +1,172 @@
+/* 如果屏幕宽度大于等于1061px */
+@media screen and (min-width:1061px){
+
+    /* 按钮:下载 */
+    #topMenu .menu .buttons .download{
+        /* 大小 */
+        width: 127px;;
+
+        /* 显示 */
+        visibility: visible;
+    }
+    /* 图片：Logo */
+    #topMenu .menu .buttons .logo{
+        /* 大小 */
+        width: 65px;
+
+        /* 显示 */
+        visibility: visible;
+    }
+    /* 图片：版本号 */
+    #topMenu .menu .buttons .version{
+        /* 大小 */
+        width: 100px;
+
+        /* 显示 */
+        visibility: visible;
+    }
+
+
+    /* 内容 */
+    #main{
+        /* 大小 */
+        width: 1100px;/*1062px*/
+
+        /* 位置 */
+        left: 50%;
+        margin-left: -550px;
+    }
+    /* Logo */
+    #logo{
+        /* 显示 */
+        visibility: visible;
+    }
+    /* 导航栏 */
+    #navigationBar{
+        /* 显示 */
+        visibility: visible;
+    }
+
+}
+
+
+/* 如果屏幕宽度小于等于1060px */
+@media screen and (max-width:1060px){
+
+    /* 菜单栏 */
+    #topMenu .menu{
+        /* 位置 */
+        top: 0px;
+    }
+    /* 按钮:下载 */
+    #topMenu .menu .buttons .download{
+        /* 大小 */
+        width: 127px;
+
+        /* 隐藏 */
+        visibility: visible;
+    }
+    /* 图片：Logo */
+    #topMenu .menu .buttons .logo{
+        /* 大小 */
+        width: 65px;
+
+        /* 显示 */
+        visibility: visible;
+    }
+    /* 图片：版本号 */
+    #topMenu .menu .buttons .version{
+        /* 大小 */
+        width: 100px;
+
+        /* 显示 */
+        visibility: visible;
+    }
+
+
+    /* 内容 */
+    #main{
+        /* 大小 */
+        width: 1180px;/*1062px*/
+
+        /* 位置 */
+        left: 50%;
+        margin-left: -590px;
+    }
+    /* Logo */
+    #logo{
+        /* 隐藏 */
+        visibility: hidden;
+    }
+    /* 导航栏 */
+    #navigationBar{
+        /* 隐藏 */
+        visibility: hidden;
+    }
+
+}
+
+
+/* 如果屏幕宽度小于等于599px */
+@media screen and (max-width:599px){
+
+    /* 菜单栏 */
+    /* 按钮:下载 */
+    #topMenu .menu .buttons .download{
+        /* 大小 */
+        width: 0px;
+
+        /* 隐藏 */
+        visibility: hidden;
+    }
+    /* 图片：Logo */
+    #topMenu .menu .buttons .logo{
+        /* 大小 */
+        width: 0px;
+
+        /* 显示 */
+        visibility: hidden;
+    }
+    /* 图片：版本号 */
+    #topMenu .menu .buttons .version{
+        /* 大小 */
+        width: 0px;
+
+        /* 显示 */
+        visibility: hidden;
+    }
+
+}
+
+
+
+/* 如果屏幕宽度小于等于320px */
+@media screen and (max-width:450px){
+
+    #main #timerApp{
+        transform: scale(0.9);
+    }
+
+}
+
+
+
+/* 如果屏幕宽度小于等于320px */
+@media screen and (max-width:375px){
+
+    #main #timerApp{
+        transform: scale(0.8);
+    }
+
+}
+
+
+
+/* 如果屏幕宽度小于等于320px */
+@media screen and (max-width:320px){
+
+    #main #timerApp{
+        transform: scale(0.7);
+    }
+
+}

@@ -1,0 +1,31 @@
+/* 网页的[主要内容] 的 动画 */
+/* （main中的动画） */
+
+
+/* a标签:[bottom中的所有a标签] */
+/* [当鼠标移出时] */
+#main .bottom a{
+    /* 文字 */
+    text-decoration: none;
+}
+/* [当鼠标进入时] */
+#main .bottom a:hover{
+    /* 文字 */
+    text-decoration: underline;
+}
+
+
+
+/* 按钮:[下载] */
+/* [当鼠标移出时] */
+#main .top .button{
+    /* 过渡 */
+    transition: transform 0.1s;
+    /* 变换 */
+    transform: scale(1,1);
+}
+/* [当鼠标点击时] */
+#main .top .button:active{
+    /* 变换 */
+    transform: scale(0.95,0.85);
+}

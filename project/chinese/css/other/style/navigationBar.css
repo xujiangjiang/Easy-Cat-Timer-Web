@@ -1,0 +1,293 @@
+/* 导航栏 */
+#navigationBar{
+    /* 大小 */
+    width: 200px;
+    height: 435px;
+
+    /* 定位 */
+    position: absolute;
+
+    /* 位置 */
+    top: 0px;
+    left: 835px;
+}
+
+/* 导航栏中的所有元素 */
+#navigationBar *{
+    /* 定位 */
+    position: absolute;
+}
+
+
+
+/* 按钮：这是什么？ */
+#navigationBar .whatIsIt{
+    /* 大小 */
+    width: 160px;
+    height: 67px;
+
+    /* 位置 */
+    top: 192px;
+    left: 15px;
+
+    /*鼠标光标*/
+    cursor: pointer;
+}
+/* 气泡 */
+#navigationBar .whatIsIt .bubble{
+    /* 大小 */
+    width: 19px;
+    height: 16px;
+
+    /* 位置 */
+    top: 51px;
+    left: 0px;
+
+    /*图片*/
+    background-image: url(../../../asset/image/document/bubble-01.png);
+}
+/* 盒子 */
+#navigationBar .whatIsIt .rect{
+    /* 大小 */
+    width: 110px;
+    height: 53px;
+
+    /* 位置 */
+    top: 12px;
+    left: 19px;
+
+    /*图片*/
+    background-image: url(../../../asset/image/document/box-01.png);
+}
+/* 文字 */
+#navigationBar .whatIsIt .text{
+    /* 大小 */
+    width: 141px;
+    height: 64px;
+
+    /* 位置 */
+    top: -1px;
+    left: 16px;
+
+    /*图片*/
+    background-image: url(../../../asset/image/document/WhatIsIt-CN.png);
+}
+
+
+
+/* 按钮：下载 */
+#navigationBar .download{
+    /* 大小 */
+    width: 182px;
+    height: 50px;
+
+    /* 位置 */
+    top: 266px;
+    left: 0px;
+
+    /*鼠标光标*/
+    cursor: pointer;
+}
+/* 气泡 */
+#navigationBar .download .bubble{
+    /* 大小 */
+    width: 24px;
+    height: 16px;
+
+    /* 位置 */
+    top: 25px;
+    left: 12px;
+
+    /*图片*/
+    background-image: url(../../../asset/image/document/bubble-02.png);
+
+
+}
+/* 盒子 */
+#navigationBar .download .rect{
+    /* 大小 */
+    width: 121px;
+    height: 40px;
+
+    /* 位置 */
+    top: 7px;
+    left: 36px;
+
+    /*图片*/
+    background-image: url(../../../asset/image/document/box-02.png);
+}
+/* 文字 */
+#navigationBar .download .text{
+    /* 大小 */
+    width: 135px;
+    height: 49px;
+
+    /* 位置 */
+    top: 0px;
+    left: 40px;
+
+    /*图片*/
+    background-image: url(../../../asset/image/document/Download-CN.png);
+}
+
+
+
+/* 按钮：其他 */
+#navigationBar .other{
+    /* 大小 */
+    width: 145px;
+    height: 45px;
+
+    /* 位置 */
+    top: 323px;
+    left: 0px;
+    
+    /*鼠标光标*/
+    cursor: pointer;
+}
+/* 气泡 */
+#navigationBar .other .bubble{
+    /* 大小 */
+    width: 24px;
+    height: 15px;
+
+    /* 位置 */
+    top: 12px;
+    left: 6px;
+
+    /*图片*/
+    background-image: url(../../../asset/image/document/bubble-03.png);
+}
+/* 盒子 */
+#navigationBar .other .rect{
+    /* 大小 */
+    width: 109px;
+    height: 45px;
+
+    /* 位置 */
+    top: 0px;
+    left: 32px;
+
+    /*图片*/
+    background-image: url(../../../asset/image/document/box-03.png);
+}
+/* 文字 */
+#navigationBar .other .text{
+    /* 大小 */
+    width: 82px;
+    height: 43px;
+
+    /* 位置 */
+    top: 1px;
+    left: 40px;
+
+    /*图片*/
+    background-image: url(../../../asset/image/document/Other-CN.png);
+}
+
+
+
+/* 语言:框 */
+#navigationBar .language{
+    /* 大小 */
+    width: 100px;
+    height: 90px;
+
+    /* 居中 */
+    left: 60%;
+    margin-left: -50px;
+    top: 50px;
+
+    /* 隐藏 */
+    visibility: visible;
+    opacity: 1;
+}
+#navigationBar .language .box{
+    /* 大小 */
+    width: 100px;
+    height: 85px;
+    border-radius: 7px;
+
+    /* 位置 */
+    top: 5px;
+    
+    /* 颜色 */
+    background-color: #ececec;
+}
+#navigationBar .language .corner{
+    /* 大小 */
+    width: 0px;
+    height: 0px;
+
+    /* 定位 */
+    top: -11px;
+    left: 40px;
+
+    /* 三角形 */
+    border: 10px solid;
+    border-color: transparent transparent #ececec transparent;
+
+    /* 变换 */
+    transform: scale(0.7,1);
+}
+
+/* 语言:英文 */
+#navigationBar .language .english{
+    /* 大小 */
+    width: 80px;
+    height: 24px;
+    border-radius: 3px;
+
+    /* 居中 */
+    left: 50%;
+    margin-left: -42px;
+    top: 15px;
+
+    /* 边框 */
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+
+    /* 居中 */
+    text-align: center;
+    white-space: nowrap;
+    line-height: 24px;
+
+    /* 颜色 */
+    color: #4a463c;
+    font-size: 14px;
+    font-weight: bold;
+
+    /*不能选中文字*/
+    user-select: none;
+}
+/* 语言:中文 */
+#navigationBar .language .chinese{
+    /* 大小 */
+    width: 80px;
+    height: 24px;
+    border-radius: 3px;
+
+    /* 居中 */
+    left: 50%;
+    margin-left: -42px;
+    top: 47px;
+
+    /* 边框 */
+    border-width: 2px;
+    border-style: solid;
+    border-color: #4a463c;
+
+    /* 居中 */
+    text-align: center;
+    white-space: nowrap;
+    line-height: 24px;
+
+    /* 颜色 */
+    color: #4a463c;
+    font-size: 14px;
+    font-weight: bold;
+
+    /*不能选中文字*/
+    user-select: none;
+}

@@ -1,0 +1,78 @@
+/* 计时器 的 [标题栏] */
+
+/*定时界面 的盒子*/
+#timerApp #titleBarUi{
+    /*大小*/
+    width: 0px;
+    height: 34px;
+    border-radius: 0px;
+
+    /*定位*/
+    position: absolute;
+    left: 270px;
+    top: 0px;
+}
+
+
+
+/*按钮*/
+/*按钮：设置*/
+#titleBarUi .settingToggle{
+    /*大小*/
+    width: 52px;
+    height: 24px;
+    border-radius: 5px;
+
+    /*定位*/
+    top: 9px;
+    left: 2px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/other/Setting.png);
+    background-color: transparent;
+    background-position: center bottom;
+    background-size: 41px 21px;
+
+    /*鼠标光标*/
+    cursor: pointer;
+}
+/*按钮：最小化*/
+#titleBarUi .minimumButton{
+    /*大小*/
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+
+    /*定位*/
+    top: 8px;
+    left: 56px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/other/Minimum.png);
+    background-color: transparent;
+    background-position: center center;
+    background-size: 17px 6px;
+
+    /*鼠标光标*/
+    cursor: not-allowed;
+}
+/*按钮：关闭*/
+#titleBarUi .closeButton{
+    /*大小*/
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+
+    /*定位*/
+    top: 8px;
+    left: 82px;
+    
+    /*图片*/
+    background-image: url(../../../asset/image/other/Close.png);
+    background-color: transparent;
+    background-position: center center;
+    background-size: 16px 18px;
+
+    /*鼠标光标*/
+    cursor: pointer;
+}

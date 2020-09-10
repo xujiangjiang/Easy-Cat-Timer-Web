@@ -1,8 +1,6 @@
 # Easy Cat Timer (web)
 这是一个非常简单的猫咪计时器，使用**HTML+CSS+TypeScript**制作。
 
-(正在制作中。)
-
 <br/>
 
 <br/>
@@ -82,8 +80,7 @@ Easy Cat Timer是一款用于倒计时的软件。
 
 | 文件夹   | 描述                                 |
 | -------- | ------------------------------------ |
-| pc       | **电脑端**的web文件                  |
-| mobile   | **手机端**的web文件（制作中……）      |
+| project  | web文件                              |
 | document | 相关的文档 （直接删掉也没关系哒！~） |
 
 <br/>
@@ -112,7 +109,7 @@ https://github.com/xujiangjiang/Easy-Cat-Timer
 
 **特别感谢**：瓜指导
 
-**感谢**：小木、Pw、Amir Ammari、原浩程
+**感谢**：小木、Pw、Amir Ammari、原浩程、Felix、[TBR] Flaming、乐乐、UEMion
 
 <br/>
 

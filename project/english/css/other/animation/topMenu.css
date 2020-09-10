@@ -1,0 +1,211 @@
+/* 网页的[下拉菜单] 的 动画 */
+/* （dropDown中的动画） */
+
+
+/* 菜单 */
+/* [当鼠标移出时] */
+#topMenu .menu{
+    /* 过渡 */
+    transition: top 0.2s;
+    /* 位置 */
+    top: -115px;
+}
+
+
+/* 按钮：打开下拉菜单 */
+/* [当鼠标移出时] */
+#topMenu .openButton{
+    /* 过渡 */
+    transition: background-color 0.1s, transform 0.1s;
+    /* 颜色 */
+    background-color: transparent;
+    /* 变换 */
+    transform: scale(1);
+}
+/* [当鼠标移入时] */
+#topMenu .openButton:hover{
+    /* 颜色 */
+    background-color: rgb(240, 240, 240);
+}
+/* [当鼠标点击时] */
+#topMenu .openButton:active{
+    /* 变换 */
+    transform: scale(0.75);
+}
+
+
+/* 图片：打开下拉菜单 */
+/* [当鼠标移出“下拉菜单按钮”时] */
+#topMenu .openButton .image{
+    /* 透明度 */
+    opacity: 0.64;
+}
+/* [当鼠标移入“下拉菜单按钮”时] */
+#topMenu .openButton:hover .image{
+    /* 透明度 */
+    opacity: 1;
+}
+
+
+
+/* 按钮:[Logo] */
+/* [当鼠标移出时] */
+#topMenu .menu .buttons .logo{
+    /* 过渡 */
+    transition: transform 0.1s;
+    /* 变换 */
+    transform: scale(1);
+}
+/* [当鼠标点击时] */
+#topMenu .menu .buttons .logo:active{
+    /* 变换 */
+    transform: scale(0.85);
+}
+
+
+/* 按钮：[这是什么?]和[语言] */
+/* [当鼠标移出时] */
+#topMenu .menu .buttons .whatIsIt{
+    /* 过渡 */
+    transition: transform 0.1s;
+    /* 变换 */
+    transform: scale(1);
+}
+/* [当鼠标点击时] */
+#topMenu .menu .buttons .whatIsIt:active{
+    /* 变换 */
+    transform: scale(0.75);
+}
+/* [当鼠标移出时,下划线的样式] */
+#topMenu .menu .buttons .whatIsIt .line{
+    /* 过渡 */
+    transition: opacity 0.1s, transform 0.1s;
+    /* 变换 */
+    transform: scale(0.55,1);
+    /* 透明度 */
+    opacity: 0;
+}
+/* [当鼠标移入时,下划线的样式] */
+#topMenu .menu .buttons .whatIsIt:hover .line{
+    /* 变换 */
+    transform: scale(1,1);
+    /* 透明度 */
+    opacity: 0.5;
+}
+
+
+/* 按钮：[语言] */
+/* [当鼠标移出时,下划线的样式] */
+#topMenu .menu .buttons .language .line{
+    /* 过渡 */
+    transition: opacity 0.1s, transform 0.1s;
+    /* 变换 */
+    transform: scale(0.55,1);
+    /* 透明度 */
+    opacity: 0;
+}
+/* [当鼠标移入时,下划线的样式] */
+#topMenu .menu .buttons .language:hover .line{
+    /* 变换 */
+    transform: scale(1,1);
+    /* 透明度 */
+    opacity: 0.5;
+}
+
+
+/* 按钮:[下载] */
+/* [当鼠标移出时] */
+#topMenu .menu .buttons .download{
+    /* 过渡 */
+    transition: transform 0.1s;
+    /* 变换 */
+    transform: scale(1,1);
+}
+/* [当鼠标点击时] */
+#topMenu .menu .buttons .download:active{
+    /* 变换 */
+    transform: scale(0.9,0.8);
+}
+
+
+/* 按钮:[下载] */
+/* [当鼠标移出时] */
+#topMenu .menu .buttons .close{
+    /* 过渡 */
+    transition: transform 0.1s, background-color 0.1s;
+    /* 变换 */
+    transform: scale(1);
+    /* 颜色 */
+    background-color: white;
+}
+/* [当鼠标进入时] */
+#topMenu .menu .buttons .close:hover{
+    /* 颜色 */
+    background-color: #e6e6e6;
+}
+/* [当鼠标点击时] */
+#topMenu .menu .buttons .close:active{
+    /* 变换 */
+    transform: scale(0.75);
+}
+
+
+/* 框:[选择语言] */
+/* [当鼠标移出时] */
+#topMenu .menu .buttons .language .choose{
+    /* 过渡 */
+    transition: opacity 0.2s;
+    /* 隐藏 */
+    opacity: 0;
+    visibility: hidden;
+}
+/* [当鼠标进入时] */
+#topMenu .menu .buttons .language:hover .choose{
+    /* 显示 */
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* 按钮:[选择英文] */
+/* [当鼠标移出时] */
+#topMenu .menu .buttons .language .choose .english{
+    /* 过渡 */
+    transition: transform 0.1s, border-color 0.1s;
+    /* 变换 */
+    transform: scale(1,1);
+    /* 颜色 */
+    border-color: transparent;
+}
+/* [当鼠标进入时] */
+#topMenu .menu .buttons .language .choose .english:hover{
+    /* 颜色 */
+    border-color: #4a463c;
+}
+/* [当鼠标点击时] */
+#topMenu .menu .buttons .language .choose .english:active{
+    /* 变换 */
+    transform: scale(0.85,0.75);
+}
+
+
+/* 按钮:[选择中文] */
+/* [当鼠标移出时] */
+#topMenu .menu .buttons .language .choose .chinese{
+    /* 过渡 */
+    transition: transform 0.1s, border-color 0.1s;
+    /* 变换 */
+    transform: scale(1,1);
+    /* 颜色 */
+    border-color: transparent;
+}
+/* [当鼠标进入时] */
+#topMenu .menu .buttons .language .choose .chinese:hover{
+    /* 颜色 */
+    border-color: #4a463c;
+}
+/* [当鼠标点击时] */
+#topMenu .menu .buttons .language .choose .chinese:active{
+    /* 变换 */
+    transform: scale(0.85,0.75);
+}

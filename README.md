@@ -4,7 +4,7 @@ This is a very simple cat timer, made using **HTML+CSS+TypeScript**.
 
 (in the process of making.)
 
-( [中文 ](./document/README-[zh-cn].md)请戳这里)
+[中文文档 请戳这里 ](./document/README-[zh-cn].md)
 
 <br/>
 
@@ -83,11 +83,10 @@ In addition, there are 2 cute kittens in this software.I hope this lovely timer 
 
 **Folder description:**
 
-| Folder   | Description                                             |
-| -------- | ------------------------------------------------------- |
-| pc       | The web file on **computer**                            |
-| mobile   | The web file on the **mobile phone** (in production...) |
-| document | document files（It’s okay to delete it directly!~）     |
+| Folder   | Description                                         |
+| -------- | --------------------------------------------------- |
+| project  | The web file                                        |
+| document | document files（It’s okay to delete it directly!~） |
 
 <br/>
 
@@ -115,7 +114,7 @@ https://github.com/xujiangjiang/Easy-Cat-Timer
 
 **Special thanks**: 瓜指导
 
-**Thank**: 小木、Pw、Amir Ammari、原浩程
+**Thank**: 小木, Pw, Amir Ammari, 原浩程, Felix, [TBR]Flaming, 乐乐, UEMion
 
 <br/>
 
