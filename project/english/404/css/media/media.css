@@ -1,0 +1,103 @@
+/* 如果屏幕宽度小于等于849px */
+@media screen and (max-width:753px){
+    /* 标题 */
+    #main .text .title{
+        /* 文字 */
+        font-size: 40px; 
+    }
+}
+
+
+/* 如果屏幕宽度小于等于699px */
+@media screen and (max-width:699px){
+    /* main */
+    #main{
+        /* flex布局（父元素） */
+        flex-direction: column;
+        
+        /* 位置 */
+        top: 20%;
+    }
+
+    /* 图片 */
+    #main .image{
+        margin: 0px auto;
+    }
+    /* 文字 */
+    #main .text{
+        /* 边距 */
+        margin: 0px auto;
+    }
+    /* 标题 */
+    #main .text .title{
+        /* 文字 */
+        font-size: 48px; 
+    }
+    /* 空白 */
+    #main .text .null1{
+        /* 边距 */
+        margin-top: 50px;
+    }
+}
+
+
+/* 如果屏幕宽度小于等于599px */
+@media screen and (max-width:599px){
+    /* 菜单栏 */
+    /* 按钮:下载 */
+    #menu .buttons .download{
+        /* 大小 */
+        width: 0px;
+
+        /* 隐藏 */
+        visibility: hidden;
+    }
+}
+
+
+/* 如果屏幕宽度小于等于437px */
+@media screen and (max-width:437px){
+    /* 标题 */
+    #main .text .title{
+        /* 文字 */
+        font-size: 40px; 
+    }
+}
+
+/* 如果屏幕宽度小于等于419px */
+@media screen and (max-width:419px){
+    /* 按钮：这是什么 */
+    #menu .buttons .whatIsIt {
+        /*隐藏 (flex元素)*/
+        visibility: hidden;
+        width: 0px;
+        padding: 0px 0px;
+    }
+}
+
+/* 如果屏幕宽度小于等于395px */
+@media screen and (max-width:395px){
+    /* 图片 */
+    #main .image{
+        /* 大小 */
+        width: auto;
+        height: auto;
+    }
+    #main .image .cat{
+        /* 大小 */
+        width: 198px;/*0.7*/
+        height: 211px;
+    }
+    #main .image .what{
+        /* 大小 */
+        width: 76px;
+        height: 66px;
+    }
+
+    /* 标题 */
+    #main .text .title{
+        /* 文字 */
+        font-size: 35px; 
+    }
+}
+

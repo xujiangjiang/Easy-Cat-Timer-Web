@@ -1,0 +1,131 @@
+/* main */
+#main{
+    /* 大小 */
+    width: 90%;
+    max-width: 750px;
+
+    /* 定位 */
+    position: absolute;
+
+    /* 居中 */
+    left: 50%;
+    top: 32%;
+    transform: translate(-50%, 0%);
+
+    /* flex布局（父元素） */
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+
+/* 图片 */
+#main .image{
+    /* 大小 */
+    width: 368px;
+    height: 304px;
+
+    /* flex布局（子元素） */
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    /* flex布局（父元素） */
+    display: flex;
+    flex-direction: row;
+}
+#main .image .cat{
+    /* 大小 */
+    width: 283px;
+    height: 301px;
+        
+    /* 边距 */
+    margin-top: 5px;
+
+    /* flex布局（子元素） */
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    /* 图片 */
+    background-image: url(../../asset/cat.png);
+}
+#main .image .what{
+    /* 大小 */
+    width: 109px;
+    height: 95px;
+
+    /* 边距 */
+    margin-left: -24px;
+
+    /* flex布局（子元素） */
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    /* 图片 */
+    background-image: url(../../asset/what.png);
+}
+
+
+/* 文字 */
+#main .text{
+    /* 边距 */
+    margin-left: -58px;
+
+    /* flex布局（子元素） */
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    /* flex布局（父元素） */
+    display: flex;
+    flex-direction: column;
+}
+#main .text .title{
+    /* 边距 */
+    margin: 0px;
+    padding: 0px;
+
+    /* 文字 */
+    font-size: 45px;
+    font-weight: bold;
+    color: #454442;
+
+    /* flex布局（子元素） */
+    flex-grow: 0;
+    flex-shrink: 0;
+
+}
+#main .text .content{
+    /* 边距 */
+    margin: 0px 5px;
+    padding: 0px;
+
+    /* 文字 */
+    font-size: 16px;
+    color: #7d7d7d;
+
+    /* flex布局（子元素） */
+    flex-grow: 0;
+    flex-shrink: 0;
+
+}
+#main .text .link{
+    /* 边距 */
+    margin: 0px 5px;
+    padding: 0px;
+
+    /* 文字 */
+    font-size: 16px;
+    color: #7d7d7d;
+    text-decoration: underline;
+
+    /* flex布局（子元素） */
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+#main .text .null1{
+    /* 边距 */
+    margin-top: 112px;
+}
+#main .text .null2{
+    /* 边距 */
+    margin-top: 14px;
+}
