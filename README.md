@@ -20,12 +20,21 @@ You only need to enter a number, click the [Start] button, and the countdown wil
 
 <br/>
 
+**Start using this timer:**
+
+English:  https://easycattimer.com/
+
+Chinese:  https://cn.easycattimer.com/
+
+<br/>
+
 **Feature:**
 
 - Very simple (only countdown function)
 - Very cute
 - Support two languages: Chinese, English
 - Have detailed script comments（Currently only Chinese，Will add English as soon as possible）
+- Support mobile devices（Mobile phone, ipad, etc.）
 
 <br/>
 

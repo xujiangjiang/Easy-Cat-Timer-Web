@@ -13,7 +13,15 @@ Easy Cat Timer是一款简单的倒计时软件。
 
 ![image](image/zh-cn.png)
 
+<br/>
 
+**你可以直接访问这个网站，开始使用这个计时器：**
+
+英文：https://easycattimer.com/
+
+中文：https://cn.easycattimer.com/
+
+<br/>
 
 **软件特色：**
 
@@ -21,6 +29,7 @@ Easy Cat Timer是一款简单的倒计时软件。
 - 非常可爱
 - 支持2种语言（英文、中文）
 - 有详细的中文注释
+- 支持移动端
 
 <br/>
 

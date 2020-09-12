@@ -1,32 +1,100 @@
-/* 如果屏幕宽度大于等于600px */
-@media screen and (min-width:600px){
-
-    /* 菜单栏 */
-    /* 按钮:下载 */
-    #menu .buttons .download{
-        /* flex布局（子元素） */
-        flex-shrink: 0;
-
-        /* 显示 */
-        visibility: visible;
-    }
-
-}
-
-
-
 /* 如果屏幕宽度小于等于599px */
 @media screen and (max-width:599px){
 
     /* 菜单栏 */
     /* 按钮:下载 */
     #menu .buttons .download{
-        /* flex布局（子元素） */
-        flex-shrink: 1;
-
-        /* 隐藏 */
+        /* 隐藏 (flex元素)*/
         visibility: hidden;
+        width: 0px;
     }
 
+
+    /* 内容 */
+    #content{
+        /* 大小 */
+        width: 80%;
+        min-width: 100px;
+    }
+
+}
+
+
+/* 如果屏幕宽度小于等于540px */
+@media screen and (max-width:540px){
+
+    /* 图片 */
+    #image .timerImage{
+        /* 大小 */
+        width: 347px;
+        height: 307px;
+    }
+
+    /*按钮：观看视频*/
+    #image .showVideo{
+        /* 位置 */
+        top: 270px;
+        left: 235px;
+    }
+
+}
+
+
+/* 如果屏幕宽度小于等于430px */
+@media screen and (max-width:430px){
+
+    /* 按钮:这是什么？ */
+    #menu .buttons .whatIsIt{
+        /*隐藏 (flex元素)*/
+        visibility: hidden;
+        width: 0px;
+        padding: 0px 0px;
+    }
+
+    /* 图片 */
+    #image .timerImage{
+        /* 大小 */
+        width: 304px;
+        height: 269px;
+    }
+
+    /* 图片容器 */
+    #image{
+        /* 边距 */
+        padding: 30px 0px 30px 0px;
+    }
+
+    /*按钮：观看视频*/
+    #image .showVideo{
+        /* 位置 */
+        top: 241px;
+        left: 193px;
+    }
+
+    /* 视频控件 */
+    #video .video{
+        /* 大小 */
+        width: 95%;
+        min-width: 305px;
+    }
+
+}
+
+
+/* 如果屏幕宽度小于等于320px */
+@media screen and (max-width:320px){
+    /* 图片 */
+    #image .timerImage{
+        /* 大小 */
+        width: 260px;
+        height: 230px;
+    }
+
+    /*按钮：观看视频*/
+    #image .showVideo{
+        /* 位置 */
+        top: 200px;
+        left: 142px;
+    }
 }
 

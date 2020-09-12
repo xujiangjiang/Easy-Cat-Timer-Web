@@ -22,7 +22,7 @@ button{
     background-color: rgba(169, 169, 169, 0.6);
 }
 
-div,button{
+div,button,a{
     /*让图片清晰*/
     backface-visibility:hidden;
     -webkit-backface-visibility:hidden;
@@ -32,6 +32,11 @@ div,button{
     /*图片*/
     background-repeat: no-repeat;
     background-size: 100% 100%;
+
+    /*清除移动端的点击高亮*/
+    -webkit-tap-highlight-color: transparent;
+    /*禁用长按页面时 弹出的菜单*/
+    -webkit-touch-callout:none;
 }
 
 a{

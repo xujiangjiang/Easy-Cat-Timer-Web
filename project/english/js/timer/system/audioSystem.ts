@@ -43,6 +43,7 @@ class AudioSystem{
         //如果用户设置的是 不播放音效，就不执行之后的代码啦~
         if(TimerApp.Datas.volume <= 0)return;
 
+
         //播放声音
         switch(_audioType){
 

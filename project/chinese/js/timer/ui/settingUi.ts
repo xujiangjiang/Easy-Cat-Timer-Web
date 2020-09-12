@@ -96,6 +96,9 @@ class SettingUi{
         let onMouseUpVolumeSliderRound = this.OnMouseUpVolumeSliderRound.bind(this);
         let onContextMenuUi = this.OnContextMenuUi.bind(this);
         let onDragStartUi = this.OnDragStartUi.bind(this);
+        let onTouchStartVolumeSliderRound = this.OnTouchStartVolumeSliderRound.bind(this);
+        let onTouchMoveVolumeSliderRound = this.OnTouchMoveVolumeSliderRound.bind(this);
+        let onTouchEndVolumeSliderRound = this.OnTouchEndVolumeSliderRound.bind(this);
 
 
         /* 注册事件 */
@@ -123,6 +126,10 @@ class SettingUi{
 
         this.uiElement.oncontextmenu = onContextMenuUi;
         this.uiElement.ondragstart = onDragStartUi;
+
+        this.volumeSliderRoundElement.ontouchstart = onTouchStartVolumeSliderRound;
+        this.uiElement.ontouchmove = onTouchMoveVolumeSliderRound;
+        this.uiElement.ontouchend = onTouchEndVolumeSliderRound;
 
     }
 
@@ -296,7 +303,7 @@ class SettingUi{
         if(this.isDragVolumeSliderRound == true){
 
             //如果鼠标的位置是0，那么就不继续运行啦
-            if(e.clientX < this.uiElement.parentElement.offsetLeft)return;
+            if(e.clientX <= 0)return;
 
             //获取鼠标的位置（鼠标相对于浏览器左上角的位置）
             let _mouseX:number = e.clientX;//X坐标
@@ -363,6 +370,76 @@ class SettingUi{
 
         //禁止拖拽
         return false;
+
+    }
+
+
+
+    /* 以下是移动端（触摸）的事件 */
+    //当鼠标开始拖到[音量滑动条]块时
+    private OnTouchStartVolumeSliderRound(e:TouchEvent):void{
+
+        //修改标识符
+        this.isDragVolumeSliderRound = true;
+
+    }
+    //当鼠标正在拖动[音量滑动条]块时
+    private OnTouchMoveVolumeSliderRound(e:TouchEvent):void{
+
+        //如果正在拖动
+        if(this.isDragVolumeSliderRound == true){
+
+            //如果鼠标的位置是0，那么就不继续运行啦
+            if(e.touches[0].clientX <= 0)return;
+
+            //获取鼠标的位置（鼠标相对于浏览器左上角的位置）
+            let _mouseX:number = e.touches[0].clientX-e.touches[0].radiusX;//X坐标
+
+            //获取[音量滑动条的面板]的位置（面板的左上角 相对于 浏览器左上角 的位置）
+            let _volumeSliderPanelX:number = this.volumeSliderPanelElement.offsetLeft + this.uiElement.parentElement.offsetLeft + this.uiElement.parentElement.parentElement.offsetLeft;
+
+            //偏移量（"鼠标的位置"和 "音量滑动条面板位置" 的距离）
+            let _offsetX:number = _mouseX - _volumeSliderPanelX;
+
+            //现在滑动到百分之多少了？（音量的大小是多少？）
+            let _value = Math.floor((_offsetX-4)/9) * 10;
+            
+            //音量最多是100，最少是0
+            if(_value>100){
+                _value = 100;
+            }
+            else if(_value<0){
+                _value = 0;
+            }
+
+            //如果音量没有改变，就不运行下面的代码
+            if(TimerApp.Datas.volume == _value)return;
+
+            //修改音量
+            TimerApp.Datas.volume = _value;
+
+            //修改Ui的显示
+            this.UpdateVolume(_value);
+
+        }
+        
+    }
+    //当鼠标拖动结束[音量滑动条]块时
+    private OnTouchEndVolumeSliderRound(e:TouchEvent):void{
+
+        //如果正在拖动
+        if(this.isDragVolumeSliderRound == true){
+
+            //修改标识符
+            this.isDragVolumeSliderRound = false;
+
+            //修改音量系统 中的音量
+            TimerApp.Systems.AudioSystem.UpdateVolume(TimerApp.Datas.volume);
+
+            //读取数据
+            TimerApp.Systems.SaveSystem.Save();
+
+        }
 
     }
 
