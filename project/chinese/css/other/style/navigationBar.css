@@ -5,11 +5,14 @@
     height: 435px;
 
     /* 定位 */
-    position: absolute;
+    position: relative;
 
     /* 位置 */
     top: 0px;
-    left: 835px;
+    left: 0px;
+
+    /* 间距 */
+    margin-left: 47px;
 }
 
 /* 导航栏中的所有元素 */

@@ -18,4 +18,8 @@
 
     /* 透明度 */
     opacity: 1;  
+
+    /* flex布局（父元素） */
+    display: flex;
+    flex-direction: row;
 }

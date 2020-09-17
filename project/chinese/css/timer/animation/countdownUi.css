@@ -23,10 +23,10 @@
 /* [当鼠标移出时] */
 #countdownUi .blackCat .cat .mouth{
     /* 过渡 */
-    transition: opacity 0.25s step-end, transform 0.15s;
+    transition: visibility 0.25s step-end, transform 0.15s;
 
     /* 透明度 */
-    opacity: 0;
+    visibility: hidden;
 
     /* 变换 */
     transform: scale(1);
@@ -34,10 +34,10 @@
 /* [当鼠标移入黑猫时，黑猫的嘴巴] */
 #countdownUi .blackCat .cat:hover .mouth{
     /* 过渡 */
-    transition: opacity 0s;
+    transition: visibility 0s;
 
     /* 透明度 */
-    opacity: 1;
+    visibility: visible;
 }
 
 
@@ -100,10 +100,10 @@
 /* [当鼠标移出时] */
 #countdownUi .yellowCat .cat .mouth{
     /* 过渡 */
-    transition: opacity 0.25s step-end, transform 0.15s;
+    transition: visibility 0.25s step-end, transform 0.15s;
 
     /* 透明度 */
-    opacity: 0;
+    visibility: hidden;
 
     /* 变换 */
     transform: scale(1);
@@ -111,10 +111,10 @@
 /* [当鼠标移入黄猫时，黄猫的嘴巴] */
 #countdownUi .yellowCat .cat:hover .mouth{
     /* 过渡 */
-    transition: opacity 0s;
+    transition: visibility 0s;
 
     /* 透明度 */
-    opacity: 1;
+    visibility: visible;
 }
 
 

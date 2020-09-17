@@ -3,7 +3,7 @@
 /*定时界面 的盒子*/
 #settingUi{
     /* 隐藏/显示 */
-    visibility: hidden;    
+    display: none;    
 }
 
 
@@ -247,6 +247,57 @@
     border-radius: 50%;
 }
 
+
+/* 音量的滑动条 (移动端)（因为 pc端不支持自定义Input的样式） */
+#settingUi .inputVolumeSlider{
+    /* 大小 */
+    width: 114px;
+    height: 26px;
+
+    /*定位*/
+    top: 214px;
+    left: 247px;
+
+    /* 隐藏 */
+    display: none;
+}
+/* 滑动条 */
+#settingUi .inputVolumeSlider .input{
+    /* 位置 */
+    width: 100px;
+    height: 5px;
+    margin-top: 10px;
+    margin-left: 9px;
+
+    /* 颜色和样子 */
+    background-color: #c2c2c2;
+    border-radius: 3px;
+
+    /* 去掉外观 */
+    -webkit-appearance: none;
+
+    /* 去掉边框 */
+    outline: none;
+}
+/* 滑动条的块 */
+#settingUi .inputVolumeSlider .input::-webkit-slider-thumb{
+    /* 大小 */
+    width: 14px;
+    height: 14px;
+    
+    /* 位置 */
+    margin-top: -1px;
+
+    /* 颜色和样子 */
+    background-color: #767676;
+    border-radius: 50%;
+
+    /* 去掉外观 */
+    -webkit-appearance: none;
+
+    /* 鼠标光标 */
+    cursor: default;
+}
 
 
 /* 音量的值 */

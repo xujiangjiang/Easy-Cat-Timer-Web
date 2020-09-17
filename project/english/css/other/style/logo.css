@@ -9,7 +9,11 @@
 
     /* 位置 */
     top: 44px;
-    left: 5px;
+    left: 0px;
+
+    /* 间距 */
+    margin-right: 37px;
+    margin-left: 5px;
 }
 
 #logo *{

@@ -10,10 +10,10 @@
     border-radius: 20px;
 
     /*定位*/
-    position: absolute;
+    position: relative;
 
     /*居中对齐*/
-    left: 394px;
+    left: 0px;
     top: 38px;
 
     /*阴影*/
@@ -25,6 +25,10 @@
 
     /*超出边框的内容 自动隐藏*/
     overflow: hidden;
+
+    /* flex布局（子元素） */
+    flex-grow: 0;
+    flex-shrink: 0;
 
 }
 

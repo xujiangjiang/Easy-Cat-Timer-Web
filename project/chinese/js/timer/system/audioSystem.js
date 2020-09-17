@@ -2,7 +2,7 @@
 class AudioSystem {
     /* 构造方法 */
     constructor() {
-        /* 初始化 */
+        /* 初始化组件 */
         this.buttonDownAudio = document.querySelector("#audios .buttonDown");
         this.buttonUpAudio = document.querySelector("#audios .buttonUp");
         this.addOrLessNumberAudio = document.querySelector("#audios .addOrLessNumber");
@@ -23,6 +23,11 @@ class AudioSystem {
         //如果用户设置的是 不播放音效，就不执行之后的代码啦~
         if (TimerApp.Datas.volume <= 0)
             return;
+        //如果是ios系统，那么就交给supportIosTool脚本，进行播放
+        if (OtherApp.SupportIosTool.IsIos == true) {
+            OtherApp.SupportIosTool.PlayAudio(_audioType);
+            return;
+        }
         //播放声音
         switch (_audioType) {
             case AudioType.ButtonDown:

@@ -1,0 +1,7 @@
+/* 背景（网页的背景，用于触发 touchStart事件的） */
+#background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+}

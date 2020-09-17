@@ -73,11 +73,11 @@ class TimingUi {
     OpenOrCloseUi(_isOpen) {
         //如果是打开[设置界面]
         if (_isOpen == true) {
-            this.UiElement.style.visibility = "visible"; //显示
+            this.UiElement.style.display = "block"; //显示
         }
         //如果是关闭[设置界面]
         else {
-            this.UiElement.style.visibility = "hidden"; //隐藏
+            this.UiElement.style.display = "none"; //隐藏
         }
     }
     /* 事件 */

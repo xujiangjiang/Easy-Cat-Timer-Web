@@ -38,10 +38,6 @@ class CountdownUi {
         let onContextMenuUi = this.OnContextMenuUi.bind(this);
         let onMouseDownBody = this.OnMouseDownBody.bind(this);
         let onDragStartUi = this.OnDragStartUi.bind(this);
-        let onTouchStartYellowCatMouthButton = this.OnTouchStartYellowCatMouthButton.bind(this);
-        let onTouchEndYellowCatMouthButton = this.OnTouchEndYellowCatMouthButton.bind(this);
-        let onTouchStartBlackCatMouthButton = this.OnTouchStartBlackCatMouthButton.bind(this);
-        let onTouchEndBlackCatMouthButton = this.OnTouchEndBlackCatMouthButton.bind(this);
         /* 注册事件 */
         this.blackCatPanelElement.onmouseenter = onMouseEnterBlackCatPanel;
         this.blackCatPanelElement.onmouseleave = onMouseLeaveBlackCatPanel;
@@ -56,10 +52,6 @@ class CountdownUi {
         this.uiElement.oncontextmenu = onContextMenuUi;
         this.uiElement.ondragstart = onDragStartUi;
         this.uiElement.parentElement.parentElement.onmousedown = onMouseDownBody;
-        this.yellowCatOpenMouthElement.ontouchstart = onTouchStartYellowCatMouthButton;
-        this.yellowCatOpenMouthElement.ontouchend = onTouchEndYellowCatMouthButton;
-        this.blackCatOpenMouthElement.ontouchstart = onTouchStartBlackCatMouthButton;
-        this.blackCatOpenMouthElement.ontouchend = onTouchEndBlackCatMouthButton;
     }
     /* 属性 */
     //元素：倒计时界面
@@ -73,7 +65,7 @@ class CountdownUi {
         //如果是打开[设置界面]
         if (_isOpen == true) {
             //显示
-            this.UiElement.style.visibility = "visible";
+            this.UiElement.style.display = "block";
         }
         //如果是关闭[设置界面]
         else {
@@ -85,7 +77,7 @@ class CountdownUi {
             //关闭完成的提示
             this.OpenOrCloseCompleteTip(false);
             //隐藏
-            this.UiElement.style.visibility = "hidden";
+            this.UiElement.style.display = "none";
         }
     }
     /* [更新时间]
@@ -172,7 +164,7 @@ class CountdownUi {
         //停止绳子自由摆动的动画
         this.blackCatRopeElement.style.animation = "";
         //播放音效
-        if (this.uiElement.style.visibility == "visible") {
+        if (this.uiElement.style.display != "none") {
             TimerApp.Systems.AudioSystem.PlayAudio(AudioType.CatDown);
         }
         //隐藏猫的闭嘴
@@ -313,56 +305,5 @@ class CountdownUi {
     OnDragStartUi() {
         //禁止拖拽
         return false;
-    }
-    /* 下面是移动端（触摸）的事件 */
-    //当手指在[黄猫的嘴巴]上按下时
-    OnTouchStartYellowCatMouthButton() {
-        //把猫的嘴巴变小
-        this.yellowCatOpenMouthElement.style.transform = "scale(0.75)";
-        //显示猫的闭嘴
-        this.yellowCatCloseMouthElement.style.opacity = "1";
-        this.yellowCatCloseMouthElement.style.transform = "scale(1,1)";
-        //暂停绳子的动画
-        this.yellowCatRopeElement.style.animationPlayState = "paused";
-        //播放音效
-        TimerApp.Systems.AudioSystem.PlayAudio(AudioType.ButtonDown);
-    }
-    //当手指在[黄猫的嘴巴]上抬起时
-    OnTouchEndYellowCatMouthButton(e) {
-        //把猫的嘴巴变小
-        this.yellowCatOpenMouthElement.style.transform = "scale(1)";
-        //隐藏猫的闭嘴
-        this.yellowCatCloseMouthElement.style.opacity = "0";
-        this.yellowCatCloseMouthElement.style.transform = "scale(1,0.8)";
-        //继续播放 绳子的动画
-        this.yellowCatRopeElement.style.animationPlayState = "running";
-        //点击
-        this.OnClickYellowCatMouthButton();
-        e.preventDefault();
-    }
-    //当手指在[黑猫的嘴巴]上按下时
-    OnTouchStartBlackCatMouthButton() {
-        //把猫的嘴巴变小
-        this.blackCatOpenMouthElement.style.transform = "scale(0.75)";
-        //显示猫的闭嘴
-        this.blackCatCloseMouthElement.style.opacity = "1";
-        this.blackCatCloseMouthElement.style.transform = "scale(1,1)";
-        //暂停绳子的动画
-        this.blackCatRopeElement.style.animationPlayState = "paused";
-        //播放音效
-        TimerApp.Systems.AudioSystem.PlayAudio(AudioType.ButtonDown);
-    }
-    //当手指在[黑猫的嘴巴]上抬起时
-    OnTouchEndBlackCatMouthButton(e) {
-        //把猫的嘴巴变大
-        this.blackCatOpenMouthElement.style.transform = "scale(1)";
-        //隐藏猫的闭嘴
-        this.blackCatCloseMouthElement.style.opacity = "0";
-        this.blackCatCloseMouthElement.style.transform = "scale(1,0.8)";
-        //继续播放 绳子的动画
-        this.blackCatRopeElement.style.animationPlayState = "running";
-        //点击
-        this.OnClickBlackCatMouthButton();
-        e.preventDefault();
     }
 }

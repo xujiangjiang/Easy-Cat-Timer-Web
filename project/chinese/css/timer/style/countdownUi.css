@@ -4,7 +4,7 @@
 #countdownUi{
 
     /* 隐藏 */
-    visibility: hidden;
+    display: none;
 
     /*超出边框的内容 自动隐藏*/
     overflow: hidden;
